@@ -1,0 +1,112 @@
+mixin event()
+    +b.event
+        +e.inner
+            +e.banner
+                +e.bgd(src=require('./../images/event-bgd.jpg'), alt='')
+                +e.shadow_mobil
+                +e.shadow_desktop(src=require('./../images/event-shadow.png'), alt='')
+                +breadcrumbs()
+                +e.title Пересмотр организационной структуры подразделения тестирования
+            +e.content
+                +e.left-bar
+                    +e.details
+                        +e.details-item
+                            img(src=require('./../images/location-icon_green.svg'), alt='')
+                            span  Минск, пр-т Победителей 100500, Marriott Hotel
+                        +e.details-item
+                            img(src=require('./../images/date-icon.svg'), alt='')
+                            span  3 сентября 2020
+                        +e.details-item
+                            img(src=require('./../images/time-icon_green.svg'), alt='')
+                            span  12:00 – 17:00
+                    +e.description
+                        +e.description-title-inner
+                            +e.H3.description-title  Описание
+                            +e.SVG.description-icon(mlns="http://www.w3.org/2000/svg" width="6" height="9" viewBox="0 0 6 9" fill="none")
+                                +e.PATH.icon-path(d="M1.5 1.5L4.5 4.5L1.5 7.5" stroke="#B9B9B9" stroke-width="1.3" stroke-linecap="round")
+                        +e.description-content
+                                +e.subtab-content-item
+                                    +e.H4
+                                    +e.P Интерактивный однодневный тренинг для команд от 5 до 40 человек, обучающий участников навыкам командообразования, коучингового лидерства, активного слушания и решения проблем. Основной акцент тренинга – метод управления и развития подчиненных с помощью вопросов, являющийся основой коучингового стиля лидерства.
+                                +e.subtab-content-item.tabs-content__subtab-content-item_active
+                                    +e.H4 Суть:
+                                    +e.P интерактивный однодневный тренинг по развитию soft skills  для команд от 5 до 40 человек.
+                                +e.subtab-content-item.tabs-content__subtab-content-item_active
+                                    +e.H4 Цель:
+                                    +e.P тренинг обучает участников навыкам командообразования, коучингового лидерства, активного слушания и решения проблем.
+                                +e.subtab-content-item.tabs-content__subtab-content-item_active-bgd
+                                    +e.H4 Изюм:
+                                    +e.P основной акцент тренинга – метод управления и развития подчиненных с помощью вопросов, являющийся основой коучингового стиля лидерства.
+                        +e.price
+                            +e.price-title За два дня вы расслабитесь так, как никогда
+                            +e.price-content
+                                +e.price-item
+                                    +e.SPAN.price-item-title ONLINE
+                                    +e.price-item-content
+                                        +e.SPAN.price-item-text 15$
+                                        +e.SPAN.price-item-text 40BYN
+                                        +e.SPAN.price-item-text 1130₽
+                                    +e.price-item-list
+                                        +e.SPAN.price-item-web Онлайн-приглашение
+                                    +e.A.price-button(href="") Купить билет
+                                +e.price-item
+                                    +e.SPAN.price-item-title ONLINE WITH RECORD
+                                    +e.price-item-content
+                                        +e.SPAN.price-item-text 15$
+                                        +e.SPAN.price-item-text 40BYN
+                                        +e.SPAN.price-item-text 1130₽
+                                    +e.price-item-list
+                                        +e.SPAN.price-item-web Онлайн-приглашение
+                                        +e.SPAN.price-item-web Доступ к записи
+                                    +e.A.price-button(href="") Купить билет
+                                +e.price-item
+                                    +e.SPAN.price-item-title VIP
+                                    +e.price-item-content
+                                        +e.SPAN.price-item-text 15$
+                                        +e.SPAN.price-item-text 40BYN
+                                        +e.SPAN.price-item-text 1130₽
+                                    +e.price-item-list
+                                        +e.SPAN.price-item-web Онлайн-приглашение
+                                        +e.SPAN.price-item-web Доступ к записи
+                                        +e.SPAN.price-item-web 5 записанных техник для быстрого расслабления
+                                    +e.A.price-button(href="") Купить билет
+                    +e.feedback
+                        +e.feedback-heading  Отзывы
+                        +e.swiper-container.swiper-container
+                            +e.swiper-wrapper.swiper-wrapper
+                                +e.swiper-slide.swiper-slide
+                                    +e.feedback-title
+                                        +e.feedback-name Яна Блезиг
+                                        +e.feedback-position HR ДИРЕКТОР, CASTORAMA, РОССИЯ, МОСКВА
+                                    +e.feedback-box
+                                +e.swiper-slide.swiper-slide
+                                    +e.feedback-title
+                                        +e.feedback-name Яна Блезиг
+                                        +e.feedback-position HR ДИРЕКТОР, CASTORAMA, РОССИЯ, МОСКВА
+                                    +e.feedback-box
+                                +e.swiper-slide.swiper-slide
+                                    +e.feedback-title
+                                        +e.feedback-name Яна Блезиг
+                                        +e.feedback-position HR ДИРЕКТОР, CASTORAMA, РОССИЯ, МОСКВА
+                                    +e.feedback-box
+                                +e.swiper-slide.swiper-slide
+                                    +e.feedback-title
+                                        +e.feedback-name Яна Блезиг
+                                        +e.feedback-position HR ДИРЕКТОР, CASTORAMA, РОССИЯ, МОСКВА
+                                    +e.feedback-box
+                            +e.swiper-buttons
+                                +e.swiper-button.swiper-button-prev
+                                +e.swiper-button.swiper-button-next
+                    +form()
+                +e.right-bar
+                    +contacts()
+                    +e.tg
+                        +e.tg-title Присоединяйтесь к нашему сообществу в телеграм
+                        +e.A.tg-link(href='#')
+                            span Присоединиться
+                            img(src=require('./../images/tg-icon_white.svg'), alt='')
+                    +e.map
+                      a(href='https://yandex.by/maps/org/minsk_marriott_hotel/1702087911/?utm_medium=mapframe&utm_source=maps' style='color:#eee;font-size:12px;position:absolute;top:0px;') Minsk Marriott Hotel
+                      a(href='https://yandex.by/maps/157/minsk/category/hotel/?utm_medium=mapframe&utm_source=maps' style='color:#eee;font-size:12px;position:absolute;top:14px;') &Gcy;&ocy;&scy;&tcy;&icy;&ncy;&icy;&tscy;&acy; &vcy; &Mcy;&icy;&ncy;&scy;&kcy;&iecy;
+                      iframe(src='https://yandex.by/map-widget/v1/-/CCQtAXvnGA' width='560' height='400' frameborder='1' allowfullscreen='true' style='position:relative;')
+                    +e.sticky-bottom

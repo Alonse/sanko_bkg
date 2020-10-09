@@ -1,0 +1,51 @@
+mixin checkout()
+    +b.checkout
+        +e.inner
+            .container
+                +breadcrumbs()
+                +e.FORM.wrapper(data-total="" data-count="6" data-price="500")
+                    +e.IMG.logo-check(src=require('./../images/logo-check.svg'), alt='')
+                    +e.SPAN.title оформление заказа
+                    +e.list
+                        +e.item
+                            +e.SPAN.item-title Заказчик
+                            +e.SPAN.item-desc Иван Иванов
+                            +e.SPAN.item-subdesc Директор. ООО Мастак
+                        +e.item
+                            +e.SPAN.item-title Описание заказа
+                            +e.item-list
+                                +e.list-item
+                                    +e.SPAN.list-item-title Командообразование  и решение проблем
+                                +e.list-item
+                                    +e.list-item-image-wrapper
+                                        +e.IMG.list-item-image(src=require('./../images/location.svg'), alt='')
+                                    +e.SPAN.list-item-desc Минск, пр-т Победителей 100500, Marriott Hotel
+                                +e.list-item
+                                    +e.list-item-image-wrapper
+                                        +e.IMG.list-item-image(src=require('./../images/date.svg'), alt='')
+                                    +e.SPAN.list-item-desc 3 сентября 2020
+                                +e.list-item
+                                    +e.list-item-image-wrapper
+                                        +e.IMG.list-item-image(src=require('./../images/time.svg'), alt='')
+                                    +e.SPAN.list-item-desc 12:00 – 17:00
+                    +e.price
+                        +e.price-item
+                            +e.SPAN.price-title Количество билетов
+                            +e.price-input
+                                +e.INPUT.button-input(type="button" value="–" id="button_minus")
+                                +e.INPUT.number-input(type="number" step="1" min="1" id="num_count" name="quantity" value="1")
+                                +e.INPUT.button-input(type="button" value="+" id="button_plus")
+                        +e.price-item
+                            +e.SPAN.price-title Сумма заказа
+                            +e.price-number
+                                +e.SPAN.price-number-total 3000
+                                SPAN BYN
+                        +e.price-item
+                            +e.SPAN.price-title Платежная система
+                            +e.SPAN.price-desc Банковской картой & Apple Pay. Оплата непосредственно после оформления заказа. Принимаются VISA (всех видов), MasterCard (в том числе Maestro), эмитированные любым банком мира, в том числе эмитированные АСБ «Беларусбанк»
+                        +e.price-item
+                            +e.SPAN.price-title Комментарий к заказу
+                            +e.TEXTAREA(name="message" type="text")
+                    +e.BUTTON.button(type="submit") Оформить заказ
+
+

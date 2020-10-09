@@ -1,0 +1,16 @@
+include ./../mixins
+doctype html
+html
+    +head()
+    body(class="app")
+            +compass(data-remodal-id='compass-modal')
+            +compass-button()
+            +header()
+            +popup()
+            main.main(id='main')
+                div.flex-container
+                    +event()
+                    //+form()
+                    +hub()
+                    +footer()
+                    +compass-button()

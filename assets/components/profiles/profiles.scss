@@ -1,0 +1,268 @@
+@import "./../../common/constants";
+
+.profiles {
+  font-family: "Open Sans", sans-serif;
+
+  &__title {
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #252F3D;
+    margin-top: 30px;
+    margin-bottom: 15px;
+
+    @include md {
+      margin-top: 40px;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 44px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #252F3D;
+    display: block;
+    margin-bottom: 20px;
+
+    @include sm {
+      margin-bottom: 32px;
+    }
+    @include md {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__swiper-slide {
+    width: 232px;
+    height: 248px;
+    background-image: url("./../../images/profile-bgd.png");
+    margin-left: 10px;
+    margin-right: 10px;
+    background-size: auto 100%;
+    background-position: 50% 100%;
+    border-radius: 8px;
+    position: relative;
+
+    @include sm {
+      width: 352px;
+      height: 248px;
+
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-bottom: 20px;
+    }
+
+    @include md {
+      width: 232px;
+      height: 248px;
+    }
+
+    @include lg {
+      width: 295px;
+      height: 248px;
+      margin-bottom: 0px;
+    }
+  }
+
+  &__hover-block {
+    position: absolute;
+    left: 0;
+    width: 232px;
+    height: 248px;
+    top: 73%;
+    transition: .5s;
+    border-radius: 8px;
+
+    @include sm {
+      width: 352px;
+      height: 248px;
+    }
+  }
+
+  &__hover-block_active {
+    top: 0;
+    transition: .5s;
+    background: rgba(37, 47, 61, 0.9);
+
+  }
+
+
+
+  &__name-inner {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  }
+
+  &__name {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #E9EDF2;
+    max-width: 145px;
+
+    @include sm {
+      max-width: unset;
+    }
+  }
+
+  &__icon {
+    margin-right: 10px;
+    width: 12px;
+    height: auto;
+  }
+
+  &__description{
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding: 0 22px;
+    margin-top: 20px;
+  }
+
+  &__link-inner {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 22px;
+    bottom: 22px;
+  }
+
+  &__link {
+    margin-right: 12px;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+  }
+
+  &__swiper-wrapper {
+
+
+    @include sm {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-left: 22px;
+      padding-right: 22px;
+    }
+
+    @include sm {
+      width: auto;
+    }
+
+  }
+
+  &__swiper-container {
+    @include lg {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+  }
+
+  &__online-inner {
+    margin-top: 20px;
+    display: none;
+    @include sm {
+      display: block;
+    }
+  }
+
+  &__online-wrapper {
+    border-radius: 8px;
+    border: 12px solid #D1D3D4;
+    background: #D1D3D4;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__online {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background: linear-gradient(188.42deg, #53616D -21.35%, #2D3D52 115.33%);
+
+    @include sm {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 32px;
+    }
+
+  }
+
+  &__online-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0 auto 20px;
+    max-width: 220px;
+
+    @include sm {
+      margin: 0;
+      max-width: unset;
+      text-align: left;
+    }
+  }
+
+  &__online-subtitle {
+    text-align: center;
+
+    SPAN {
+      font-size: 14px;
+      line-height: 19px;
+      color: #FFFFFF;
+      font-weight: bold;
+      margin-right: 12px;
+
+    }
+  }
+
+  &__swiper-slide:last-child {
+
+    @include sm {
+      display: none;
+    }
+  }
+
+  &__flick {
+    position: absolute;
+    top: -83px;
+    left: -100%;
+    animation: flickActive 12s cubic-bezier(0.88, 0.21, 1, 1)  infinite;
+  }
+
+  &__shadow {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+  }
+
+
+}
+
+@keyframes flickActive {
+  0% {
+    left: -100%;
+  }
+
+  30% {
+    left: 100%;
+  }
+
+  100% {
+    left: 100%;
+  }
+
+}

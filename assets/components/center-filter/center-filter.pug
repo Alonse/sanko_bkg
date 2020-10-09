@@ -1,0 +1,93 @@
+mixin center-filter()
+    +b.center-filter
+        .container
+            +e.inner
+                +e.categories
+                    +e.categories-item.center-filter__item_active Все
+                    +e.categories-item Статья
+                    +e.categories-item Видео
+                    +e.categories-item Аудио
+                +e.sub-inner
+                    +e.sub-title-inner
+                        +e.sub-title-name Все темы
+                        +e.SVG.sub-title-icon(mlns="http://www.w3.org/2000/svg" width="6" height="9" viewBox="0 0 6 9" fill="none" stroke="#B9B9B9")
+                            +e.PATH.sub-title-icon-path(d="M1.5 1.5L4.5 4.5L1.5 7.5" stroke-width="1.3" stroke-linecap="round" stroke="#B9B9B9")
+                    +e.sub-items-inner
+                        +e.sub-item
+                            +e.LABEL.container
+                                | Категория 1
+                                input(type='checkbox')
+                                +e.SPAN.checkmark
+                        +e.sub-item
+                            +e.LABEL.container
+                                | Категория 2
+                                input(type='checkbox')
+                                +e.SPAN.checkmark
+                        +e.sub-item
+                            +e.LABEL.container
+                                | Категория 3
+                                input(type='checkbox')
+                                +e.SPAN.checkmark
+                        +e.sub-item
+                            +e.LABEL.container
+                                | Категория 4
+                                input(type='checkbox')
+                                +e.SPAN.checkmark
+                        +e.sub-item
+                            +e.LABEL.container
+                                | Управление эмоциями
+                                input(type='checkbox')
+                                +e.SPAN.checkmark
+                        +e.sub-item
+                            +e.LABEL.container
+                                | Видео
+                                input(type='checkbox')
+                                +e.SPAN.checkmark
+                        +e.sub-item
+                            +e.LABEL.container
+                                | Аудио
+                                input(type='checkbox')
+                                +e.SPAN.checkmark
+                        +e.sub-item
+                            +e.LABEL.container
+                                | Управление стратегией
+                                input(type='checkbox')
+                                +e.SPAN.checkmark
+                +e.result
+                    +e.A.result-item(href='#')
+                        +e.result-item-shadow(src=require('./../images/blog-item-shadow.png'), alt='')
+                        +e.name-inner
+                            +e.name-icon(src=require('./../images/audio-icon.svg'), alt='')
+                            +e.name Аудио
+                        +e.description Адвокаты Бабарико пожаловались в Генпрокуратуру
+                    +e.A.result-item(href='#')
+                        +e.result-item-shadow(src=require('./../images/blog-item-shadow.png'), alt='')
+                        +e.name-inner
+                            +e.name-icon(src=require('./../images/audio-icon.svg'), alt='')
+                            +e.name Аудио
+                        +e.description Адвокаты Бабарико пожаловались в Генпрокуратуру
+                    +e.A.result-item(href='#')
+                        +e.result-item-shadow(src=require('./../images/blog-item-shadow.png'), alt='')
+                        +e.name-inner
+                            +e.name-icon(src=require('./../images/audio-icon.svg'), alt='')
+                            +e.name Аудио
+                        +e.description Адвокаты Бабарико пожаловались в Генпрокуратуру
+                    +e.A.result-item(href='#')
+                        +e.result-item-shadow(src=require('./../images/blog-item-shadow.png'), alt='')
+                        +e.name-inner
+                            +e.name-icon(src=require('./../images/audio-icon.svg'), alt='')
+                            +e.name Аудио
+                        +e.description Адвокаты Бабарико пожаловались в Генпрокуратуру
+                    +e.A.result-item(href='#')
+                        +e.result-item-shadow(src=require('./../images/blog-item-shadow.png'), alt='')
+                        +e.name-inner
+                            +e.name-icon(src=require('./../images/audio-icon.svg'), alt='')
+                            +e.name Аудио
+                        +e.description Адвокаты Бабарико пожаловались в Генпрокуратуру
+                    +e.A.result-item(href='#')
+                        +e.result-item-shadow(src=require('./../images/blog-item-shadow.png'), alt='')
+                        +e.name-inner
+                            +e.name-icon(src=require('./../images/audio-icon.svg'), alt='')
+                            +e.name Аудио
+                        +e.description Адвокаты Бабарико пожаловались в Генпрокуратуру
+                +e.A.more(href='#') Показать еще

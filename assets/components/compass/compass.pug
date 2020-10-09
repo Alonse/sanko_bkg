@@ -1,0 +1,29 @@
+mixin compass()
+    +b.compass
+        +e.remodal.remodal&attributes(attributes)
+            +e.inner
+                +e.close.remodal-close(data-remodal-action='close')
+                    +e.SPAN.close-text Закрыть
+                    +e.close-icon
+                        +e.close-line
+                        +e.close-line
+                .container
+                    +e.wrapper
+                        +e.cards
+                            +e.card
+                                +e.title
+                                    +color-button()
+                                    +e.SPAN.title-text Привет!
+                                +e.description Я с удовольствием помогу Вам в выборе области развития! Для этого, пожалуйста, ответьте на несколько вопросов:
+                                +e.question Вы ищете что-то для себя или для своей компании?
+                                +e.buttons
+                                    +e.BUTTON.button(data-value='1' id='option-one') Для компании
+                                    +e.BUTTON.button(data-value='2' id='option-two') Для себя
+                                    +e.BUTTON.button(data-value='3' id='option-three' style="display: none;")
+                                +e.A.output-link(href='') Продукт
+                                +e.step-back(style="display: none;")
+                                    svg(xmlns='http://www.w3.org/2000/svg' width='20' height='6' viewbox='0 0 20 6' fill='none')
+                                        path(d='M19 5L3 5L6.36842 1' stroke='#D1D3D4' stroke-width='2' stroke-linecap='round')
+                                    span Вернуться на шаг
+                        +e.img-inner
+                            +compass-animation()

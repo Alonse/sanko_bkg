@@ -1,0 +1,110 @@
+mixin menu()
+    +b.menu
+        +e.inner
+            +e.UL.filter-inner
+                +e.LI.filter
+                    +e.filter-header
+                        +e.filter-title Направления деятельности
+                        +e.filter-icon
+                            +e.SVG(xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5" fill="none")
+                                +e.PATH(d="M7 1L4 4L1 0.999999" stroke="#797E84" stroke-width="1.3" stroke-linecap="round")
+                    +e.filter-body
+                        +e.green-button(src=require('./../images/gray-button.svg'), alt='')
+                        +e.UL.filter-list
+                            +e.LI.filter-item
+                                +e.A(href='#') Осознанность & EQ
+                            +e.LI.filter-item
+                                +e.A(href='#') Стратегия и изменения
+                            +e.LI.filter-item
+                                +e.A(href='#') Развитие лидеров
+                            +e.LI.filter-item
+                                +e.A(href='#') Индивидуальный коучинг
+                            +e.LI.filter-item
+                                +e.A(href='#') Программы online формата
+                +e.LI.filter
+                    +e.filter-header
+                        +e.filter-title Будущие мероприятия
+                +e.LI.filter
+                    +e.filter-header
+                        +e.filter-title Центр знаний
+                        +e.filter-icon
+                            +e.SVG(xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5" fill="none")
+                                +e.PATH(d="M7 1L4 4L1 0.999999" stroke="#797E84" stroke-width="1.3" stroke-linecap="round")
+                    +e.filter-body
+                        +e.green-button(src=require('./../images/gray-button.svg'), alt='')
+                        +e.UL.filter-list.header__filter-list_row
+                            +e.LI.filter-item
+                                +e.A(href='#') Аудио
+                            +e.LI.filter-item
+                                +e.A(href='#') Видео
+                            +e.LI.filter-item
+                                +e.A(href='#') Блог
+                            +e.LI.filter-item
+                                +e.A(href='#') Рекомендуемая литература
+                            +e.LI.filter-item
+                                +e.A(href='#') Тематические исследования
+                +e.LI.filter
+                    +e.A.filter-header(href="#")
+                        +e.filter-title Обо мне
+                +e.LI.filter
+                    +e.A.filter-header(href="#")
+                        +e.filter-title Отзывы
+            +e.LI.filter.phone
+                +e.SVG.phone-header(width='21' height='20' viewbox='0 0 21 20' fill='none' xmlns='http://www.w3.org/2000/svg')
+                    g(clip-path='url(#clip0)')
+                        path(d='M10.375 0C4.865 0 0.375 4.49 0.375 10C0.375 15.51 4.865 20 10.375 20C15.885 20 20.375 15.51 20.375 10C20.375 4.49 15.885 0 10.375 0ZM16.485 15.13C16.485 15.67 16.045 16.11 15.505 16.11C9.305 16.11 4.265 11.07 4.265 4.87C4.265 4.33 4.705 3.89 5.245 3.89H7.485C8.025 3.89 8.465 4.33 8.465 4.87C8.465 5.62 8.585 6.35 8.815 7.05C8.925 7.41 8.835 7.79 8.575 8.05L7.565 9.39C8.405 10.97 9.385 11.95 10.985 12.8L12.355 11.76C12.585 11.53 12.975 11.44 13.325 11.56C14.025 11.79 14.755 11.91 15.505 11.91C16.045 11.91 16.485 12.35 16.485 12.89V15.13Z' fill='#D1D3D4')
+                    defs
+                        clippath#clip0
+                            rect(width='20' height='20' fill='white' transform='translate(0.375)')
+                +e.phone-wrapper
+                    +e.IMG.phone-content-img(src=require('./../images/gray-button.svg'), alt='')
+                    +e.phone-content
+                        +e.phone-part
+                            +e.SPAN.phone-part-title Наталья Шкутько
+                            +e.SPAN.phone-part-desc Руководитель направления бизнес обучения
+                            +e.phone-soc
+                                +e.A.phone-soc-item(href="#")
+                                    +e.IMG.phone-soc-image(src=require('./../images/soc-tel.svg'), alt='')
+                                +e.A.phone-soc-item(href="#")
+                                    +e.IMG.phone-soc-image(src=require('./../images/soc-viber.svg'), alt='')
+                                +e.A.phone-soc-item(href="#")
+                                    +e.IMG.phone-soc-image(src=require('./../images/soc-wu.svg'), alt='')
+                            +e.phone-number
+                                +e.A.phone-number-item(href="tel:+79654348629") +7 965 434 86 29  (РФ)
+                                +e.A.phone-number-item(href="tel:+375447541518") +375 44 754 15 18 (РБ)
+                            +e.phone-email
+                                +e.A.phone-number-item(href="mailto:natali@dennissanko.com") natali@dennissanko.com
+                        +e.phone-part
+                            +e.SPAN.phone-part-title Фаина Ермолаева
+                            +e.SPAN.phone-part-desc Менеджер по работе с клиентами
+                            +e.phone-soc
+                                +e.A.phone-soc-item(href="#")
+                                    +e.IMG.phone-soc-image(src=require('./../images/soc-tel.svg'), alt='')
+                                +e.A.phone-soc-item(href="#")
+                                    +e.IMG.phone-soc-image(src=require('./../images/soc-viber.svg'), alt='')
+                                +e.A.phone-soc-item(href="#")
+                                    +e.IMG.phone-soc-image(src=require('./../images/soc-wu.svg'), alt='')
+                            +e.phone-number
+                                +e.A.phone-number-item(href="tel:+375333745721") +375 33 374 57 21 (РБ)
+                            +e.phone-email
+                                +e.A.phone-number-item(href="mailto:faina@dennissanko.com") faina@dennissanko.com
+                        +e.phone-part
+                            +e.SPAN.phone-part-title
+                            +e.phone-number
+                                +e.A.phone-number-item(href="https://t.me/joinchat/QKoXTRSEdGJ43eX7JS3xTw") Business ComeUnity
+                            +e.phone-number
+                                +e.A.phone-number-item(href="https://t.me/joinchat/QKoXTRx8dQdxgSU9NBPzuA") Mindfulness ComeUnity
+                            +e.phone-number
+                                +e.A.phone-number-item(href="https://t.me/denissanko_support") Техническая поддержка
+                            +e.phone-soc
+                                +e.A.phone-soc-item(href="#")
+                                    +e.IMG.phone-soc-image(src=require('./../images/soc-tel.svg'), alt='')
+                                +e.A.phone-soc-item(href="#")
+                                    +e.IMG.phone-soc-image(src=require('./../images/soc-viber.svg'), alt='')
+                                +e.A.phone-soc-item(href="#")
+                                    +e.IMG.phone-soc-image(src=require('./../images/soc-wu.svg'), alt='')
+                        +e.phone-part
+                            +socials()
+
+
+

@@ -1,0 +1,31 @@
+mixin signin()
+    +b.signin
+        +e.inner
+            .container
+                +breadcrumbs()
+                +e.FORM.wrapper()
+                    +e.IMG.logo-check(src=require('./../images/logo-check.svg'), alt='')
+                    +e.SPAN.title Вход
+                    +e.wrapper-content
+                        +e.links
+                            +e.A.link(href="#") нужна регистрация
+                            +e.A.link(href="#") забыл пароль
+                        +e.list
+                            +e.item
+                                +e.item-wrapper
+                                    +e.LABEL.item-label Логин или электронная почта
+                                +e.INPUT.item-input(name="name" type="text" placeholder="Иван")
+                            +e.item
+                                +e.item-wrapper
+                                    +e.LABEL.item-label Пароль
+                                +e.INPUT.item-input(name="password" type="password" placeholder="********" )
+                            +e.BUTTON.button(type="submit") Войти
+                        +e.social
+                            +e.SPAN.title-item Через соцсети
+                            +e.social-wrapper
+                                +e.A.soc-item(href="#")
+                                    +e.IMG.soc-item-image(src=require('./../images/fb.svg'), alt='')
+                                +e.A.soc-item(href="#")
+                                    +e.IMG.soc-item-image(src=require('./../images/gg.svg'), alt='')
+
+

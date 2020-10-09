@@ -1,0 +1,111 @@
+@import "./../../common/constants";
+
+.center-page {
+
+  font-family: "Open Sans", sans-serif;
+
+  &__inner {
+    background-color: #2D3D52;
+    padding-top: 56px;
+    overflow: hidden;
+    background-image: url("./../../images/center-page-bgd.jpg");
+    background-size: auto 100%;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    @include sm {
+      padding-top: 85px;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+
+    @include sm {
+      display: flex;
+    }
+  }
+
+  &__content {
+
+    @include sm {
+      min-width: 372px;
+      max-width: 415px;
+    }
+
+    @include md {
+      min-width: 568px;
+      max-width: 568px;
+    }
+    @include lg {
+      min-width: 735px;
+      max-width: 735px;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #E9EDF2;
+    margin: 16px 0;
+
+    @include sm {
+      margin: 27px 0 20px;
+      font-size: 32px;
+      line-height: 44px;
+      letter-spacing: 0.04em;
+    }
+
+    @include lg {
+      margin: 55px 0 20px;
+    }
+  }
+
+  &__description {
+
+    @include sm {
+      padding-bottom: 36px;
+    }
+
+    @include lg {
+      padding-bottom: 64px;
+    }
+    P {
+      font-size: 14px;
+      line-height: 19px;
+      color: #E9EDF2;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__portrait {
+    width: 275px;
+    display: flex;
+    align-items: flex-start;
+    margin: 20px auto 0;
+
+    @include sm {
+      position: absolute;
+      width: 443px;
+      bottom: 0;
+      right: -120px;
+      transform: scaleX(-1);
+    }
+
+    @include md {
+      transform: scaleX(1);
+      right: -50px;
+    }
+
+    @include lg {
+      right: 0px;
+    }
+  }
+
+  &__portrait-pic {
+    width: 100%;
+  }
+
+}

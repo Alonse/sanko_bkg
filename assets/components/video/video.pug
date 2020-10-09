@@ -1,0 +1,24 @@
+mixin video()
+    +b.video
+        .container
+            +e.wrapper
+                +e.title  Видеообращение
+                +e.subtitle Вкратце обо мне
+                +e.border
+                    +e.A.more(href=' ')
+                        +e.more-inner
+                            +e.SPAN Узнать больше о Денисе
+                            +e.icon
+                                +e.SVG(xmlns="http://www.w3.org/2000/svg" width="5" height="8" viewBox="0 0 5 8" fill="none")
+                                    +e.PATH.path(d="M1 1L4 4L1 7" stroke="#797E84" stroke-width="1.3" stroke-linecap="round")
+                    +e.A.modal(href='#modal')
+                        +e.content
+                            +e.bgd(src=require('./../images/video-message-bgd.jpg'), alt='')
+                        +e.portrait(src=require('./../images/denis-smile.png'), alt='')
+                        +e.button-inner
+                            +e.button.video__button-pulse
+                                +e.button-pic(src=require('./../images/video-button.png'), alt='')
+                            +e.button-text
+                                +e.H3 Видеообращение
+                                +e.H4 Вкратце обо мне
+                +e.shadow(src=require('./../images/video-shadow.png'), alt='')

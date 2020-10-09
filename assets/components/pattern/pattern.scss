@@ -1,0 +1,78 @@
+@import "./../../common/constants";
+
+.pattern {
+
+  &__inner {
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    padding-top: 56px;
+
+    @include sm {
+      padding-top: 85px;
+
+    }
+
+    H1 {
+      font-size: 24px;
+      line-height: 33px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: #8BCC32;
+      margin-bottom: 26px;
+
+      @include sm {
+        font-size: 32px;
+        line-height: 44px;
+        letter-spacing: 0.04em;
+      }
+    }
+    H2 {
+      font-size: 24px;
+      line-height: 33px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: #252F3D;
+      margin-bottom: 16px;
+    }
+    P {
+      font-size: inherit;
+      line-height: inherit;
+      color: #252F3D;
+      margin-bottom: 16px;
+    }
+    SPAN {
+      font-weight: normal;
+      font-size: inherit;
+      line-height: inherit;
+      color: #252F3D;
+    }
+
+    UL {
+      list-style: inside;
+      font-size: inherit;
+      line-height: inherit;
+      color: #252F3D;
+    }
+
+    OL {
+      list-style: decimal inside;
+      font-size: inherit;
+      line-height: inherit;
+      color: #252F3D;
+    }
+
+    STRONG, B {
+      font-weight: 700;
+      font-size: inherit;
+      line-height: 19px;
+    }
+
+    EM, I {
+      font-style: italic;
+      font-size: inherit;
+    }
+  }
+
+
+}

@@ -1,0 +1,48 @@
+mixin tabs()
+    +b.tabs
+        +e.inner
+            +e.content.tabs__content_active
+                .container
+                    +e.content-title  Командообразование и решение проблем
+                    +e.content-inner
+                        +e.left-bar
+                            +anchor()
+                            +contacts()
+                        +e.right-bar
+                            +e.content-bgd
+                                +e.content-bgd-pic(src=require('./../images/content-bgd.jpg'), alt='')
+                            +tabs-content()
+            +e.content
+                .container
+                    +e.content-title  Тренинг Leading with Questions
+                    +e.content-inner
+                        +e.left-bar
+                            +anchor()
+                            +contacts()
+                        +e.right-bar
+                            +e.content-bgd
+                                +e.content-bgd-pic(src=require('./../images/content-bgd.jpg'), alt='')
+                            +tabs-content()
+            +e.content
+                .container
+                    +e.content-title  Долгосрочные программы развития
+                    +e.content-inner
+                        +e.left-bar
+                            +anchor()
+                            +contacts()
+                        +e.right-bar
+                            +e.content-bgd
+                                +e.content-bgd-pic(src=require('./../images/content-bgd.jpg'), alt='')
+                            +tabs-content()
+            +e.content
+                .container
+                    +e.content-title  Сертификация
+                    +e.content-inner
+                        +e.left-bar
+                            +anchor()
+                            +contacts()
+                        +e.right-bar
+                            +e.content-bgd
+                                +e.content-bgd-pic(src=require('./../images/content-bgd.jpg'), alt='')
+                            +tabs-content()
+            +events()

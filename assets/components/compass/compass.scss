@@ -1,0 +1,244 @@
+@import "./../../common/constants";
+
+
+.compass {
+  color: #D1D3D4;
+  font-family: "Open Sans", sans-serif;
+  opacity: 0;
+  width: 100vw;
+  background: rgba(37, 47, 61, 0.8);
+  top: 0;
+  //position: fixed;
+  //overflow-y: scroll;
+  height: 100vh;
+  padding-bottom: 10rem;
+
+  display: none;
+
+  &__remodal.remodal {
+    background: transparent;
+    text-align: left;
+  }
+
+
+
+  @include lg {
+    padding-bottom: 0rem;
+  }
+
+  &__inner {
+    position: relative;
+  }
+
+
+  &__close.remodal-close {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    width: auto;
+    z-index: 2;
+  }
+
+  &__close-text {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #8BCC32;
+    margin-right: 12px;
+  }
+
+  &__close-icon {
+    display: flex;
+    height: 24px;
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
+
+  &__close-line {
+    width: 30px;
+    height: 2px;
+    background: #8BCC32;
+    border-radius: 5px;
+  }
+
+  &__close-icon &__close-line:nth-child(1) {
+    transform-origin: left top;
+    transform: rotate(45deg);
+    margin-left: 1px;
+  }
+  &__close-icon &__close-line:nth-child(2) {
+    transform: rotate(-45deg);
+    transform-origin: left top;
+    margin-bottom: 1px;
+  }
+
+  &__wrapper {
+    display: flex;
+    width: 100%;
+    padding-top: 64px;
+  }
+
+  &__cards {
+    background: #FFFFFF;
+    width: 100%;
+    border-radius: 8px;
+
+    @include sm {
+      border-radius: 8px 0 0 8px;
+    }
+  }
+
+  &__card {
+    padding: 20px;
+    min-height: 288px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include sm {
+      min-height: 420px;
+      padding: 32px;
+    }
+  }
+
+  &__img-inner {
+    display: none;
+    background: #E9EDF2;
+    border-radius: 0 8px 8px 0;
+
+
+    @include sm {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 228px;
+    }
+    @include md {
+      min-width: 295px;
+    }
+
+  }
+
+  &__img {
+    width: 164px;
+    height: auto;
+
+    @include md {
+      width: 194px;
+    }
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -20px;
+    margin-bottom: 20px;
+
+    @include sm {
+      left: -32px;
+    }
+
+    SPAN {
+      font-size: 24px;
+      line-height: 33px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: #252F3D;
+      margin-left: 8px;
+
+      @include sm {
+        font-size: 32px;
+        line-height: 44px;
+        letter-spacing: 0.04em;
+        margin-left: 20px;
+      }
+    }
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 19px;
+    color: #252F3D;
+    margin-bottom: 20px;
+  }
+
+  &__question {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #252F3D;
+    margin-bottom: 10px;
+  }
+
+  &__button {
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #797E84;
+    padding: 20px;
+    transition: .5s;
+    border-radius: 8px;
+    border: 1px solid #797E84;
+    background: #ffffff;
+    margin-bottom: 10px;
+    width: 100%;
+    min-width: 136px;
+    cursor: pointer;
+
+    @include md {
+      margin-bottom: 0px;
+      margin-right: 20px;
+      width: fit-content;
+    }
+  }
+
+  &__button:hover {
+    transition: .5s;
+    background: #8BCC32;
+    border: none;
+    color: #ffffff;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+
+    @include md {
+      flex-direction: row;
+    }
+  }
+
+  &__output-link {
+    font-size: 14px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: #8BCC32;
+    display: none;
+  }
+
+  &__step-back {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    width: fit-content;
+    cursor: pointer;
+
+    span {
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 16px;
+      color: #B9B9B9;
+      margin-left: 10px;
+    }
+  }
+
+
+}
+
+

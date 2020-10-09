@@ -1,0 +1,114 @@
+mixin slider()
+    +b.slider
+        .container
+            +e.inner
+                +e.item
+                    +e.item-title Последние события
+                    +e.slider
+                        +e.navigation
+                            +e.button-inner
+                                +e.BUTTON.button.events__prev-button(id='prev-button')
+                            +e.date
+                                +e.date-day 26
+                                +e.date-month ФЕВ
+                            +e.button-inner
+                                +e.BUTTON.button.events__next-button(id='next-button')
+                        +e.slide-shadow-wrapper
+                            +e.wrapper(id='slides-wrapper')
+                                +e.slide.events__slide_active
+                                    +e.logo
+                                        +e.logo-pic(src=require('./../images/krauta-logo.svg'), alt='')
+                                        +e.d-logo(src=require('./../images/d-logo.png'), alt='')
+                                    +e.content
+                                        +e.description
+                                            +e.description-marker.events__description-marker_orange
+                                            +e.description-text Проведение презентация прогр. SIY для рук-лей эйчар-функции
+                                        +e.details
+                                            +e.details-inner
+                                                +e.place.events__item_disabled
+                                                    +e.icon(src=require('./../images/online-icon.svg'), alt='')
+                                                    +e.place-text Online
+                                                +e.time.events__item_disabled
+                                                    +e.icon(src=require('./../images/time-icon.svg'), alt='')
+                                                    +e.time-text 12:00 – 17:00
+                                            +e.address
+                                                +e.icon(src=require('./../images/address-icon.svg'), alt='')
+                                                +e.address-text Минск, пр-т Победителей 100500, Marriott Hotel
+                                            +e.A.link.events__link_orange(href='') Подробнее о проекте
+                                +e.slide.events__slide_deactive
+                                    +e.logo
+                                        +e.logo-pic(src=require('./../images/heineken-logo.svg'), alt='')
+                                        +e.d-logo(src=require('./../images/d-logo.png'), alt='')
+                                    +e.content
+                                        +e.description
+                                            +e.description-marker
+                                            +e.description-text Проведение презентация прогр. SIY для рук-лей эйчар-функции
+                                        +e.details
+                                            +e.details-inner
+                                                +e.place
+                                                    +e.icon(src=require('./../images/online-icon.svg'), alt='')
+                                                    +e.place-text Online
+                                                +e.time.events__item_disabled
+                                                    +e.icon(src=require('./../images/time-icon.svg'), alt='')
+                                                    +e.time-text 12:00 – 17:00
+                                            +e.address.events__item_disabled
+                                                +e.icon(src=require('./../images/address-icon.svg'), alt='')
+                                                +e.address-text Минск, пр-т Победителей 100500, Marriott Hotel
+                                            +e.A.link.events__link_orange(href='') Подробнее о проекте
+                            +e.slide-shadow
+                            +e.slide-shadow-2
+                +e.item
+                    +e.item-title Будущие события
+                    +e.slider
+                        +e.navigation
+                            +e.button-inner
+                                +e.BUTTON.button.events__prev-button(id='prev-button-2')
+                            +e.date
+                                +e.date-day 09
+                                +e.date-month АВГ
+                            +e.button-inner
+                                +e.BUTTON.button.events__next-button.events__next-button_orange(id='next-button-2')
+                        +e.slide-shadow-wrapper
+                            +e.wrapper(id='slides-wrapper-2')
+                                +e.slide.events__slide_active
+                                    +e.logo
+                                        +e.logo-pic(src=require('./../images/heineken-logo.svg'), alt='')
+                                        +e.d-logo(src=require('./../images/d-logo.png'), alt='')
+                                    +e.content
+                                        +e.description
+                                            +e.description-marker.events__description-marker_orange
+                                            +e.description-text Проведение презентация прогр. SIY для рук-лей эйчар-функции
+                                        +e.details
+                                            +e.details-inner
+                                                +e.place
+                                                    +e.icon(src=require('./../images/online-icon.svg'), alt='')
+                                                    +e.place-text Online
+                                                +e.time
+                                                    +e.icon(src=require('./../images/time-icon.svg'), alt='')
+                                                    +e.time-text 12:00 – 17:00
+                                            +e.address.events__item_disabled
+                                                +e.icon(src=require('./../images/address-icon.svg'), alt='')
+                                                +e.address-text Минск, пр-т Победителей 100500, Marriott Hotel
+                                            +e.A.link.events__link_orange(href='') Подробнее о проекте
+                                +e.slide.events__slide_deactive
+                                    +e.logo
+                                        +e.logo-pic(src=require('./../images/krauta-logo.svg'), alt='')
+                                        +e.d-logo(src=require('./../images/d-logo.png'), alt='')
+                                    +e.content
+                                        +e.description
+                                            +e.description-marker.events__description-marker_orange
+                                            +e.description-text Проведение стратег.сес. по долгосрочному планированию для Ассоциации приборостроения
+                                        +e.details
+                                            +e.details-inner
+                                                +e.place.events__item_disabled
+                                                    +e.icon(src=require('./../images/online-icon.svg'), alt='')
+                                                    +e.place-text Online
+                                                +e.time
+                                                    +e.icon(src=require('./../images/time-icon.svg'), alt='')
+                                                    +e.time-text 12:00 – 17:00
+                                            +e.address
+                                                +e.icon(src=require('./../images/address-icon.svg'), alt='')
+                                                +e.address-text Минск, пр-т Победителей 100500, Marriott Hotel
+                                            +e.A.link.events__link_orange(href='') Подробнее о проекте
+                            +e.slide-shadow
+                            +e.slide-shadow-2

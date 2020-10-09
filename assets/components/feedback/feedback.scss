@@ -1,0 +1,239 @@
+@import "./../../common/constants";
+
+.feedback {
+  background-color: #283649;
+  background-image: url("./../../images/leader-bgd.jpg");
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  margin-top: -50px;
+
+  @include sm {
+    margin-top: 0px;
+  }
+
+  &__inner {
+    padding: 148px 0 148px;
+    position: relative;
+  }
+
+
+  &__title {
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #E9EDF2;
+    margin-bottom: 30px;
+
+    @include sm {
+      font-size: 32px;
+      line-height: 44px;
+      letter-spacing: 0.04em;
+    }
+    @include md {
+      font-weight: 600;
+    }
+  }
+
+  &__swiper-slide {
+    background: linear-gradient(101.21deg, #F5F6F8 0%, #E9EDF2 146.55%);
+    border-radius: 8px;
+    width: 288px;
+    padding: 20px;
+    margin-top: 26px;
+    margin-right: 10px;
+    margin-left: 10px;
+
+    @include sm {
+      width: 484px;
+      padding: 32px;
+    }
+    @include md {
+      width: 484px;
+
+    }
+
+    @include lg {
+      width: 400px;
+      //pointer-events: none;
+    }
+  }
+
+  .swiper-slide-next {
+
+    @include lg {
+      pointer-events: auto;
+    }
+  }
+
+  &__swiper-slide:first-child {
+    @include md {
+      margin-left: 22px;
+    }
+  }
+
+  &__swiper-slide:last-child {
+    @include md {
+      margin-right: 22px;
+    }
+  }
+
+  //&__swiper-slide:nth-child(odd) {
+  //
+  //  @include lg {
+  //    top: -20px;
+  //  }
+  //}
+
+
+  &__name {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #252F3D;
+    margin-top: 64px;
+    margin-bottom: 10px;
+  }
+
+  &__position {
+    font-size: 12px;
+    line-height: 16px;
+    color: #797E84;
+    max-width: 180px;
+    margin-bottom: 20px;
+
+    @include sm {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__profile-pic {
+    width: 84px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    transform: translateY(-30%);
+    border-radius: 8px;
+
+    @include sm {
+      width: 114px;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 19px;
+    color: #252F3D;
+    height: 80px;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    @include sm {
+      height: 132px;
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 131px;
+    height: auto;
+  }
+
+  &__link-inner {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: 19px;
+    color: #797E84;
+    margin-right: 8px;
+  }
+
+  &__link-icon {
+
+  }
+
+  &__shadow {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+
+    @include sm {
+      height: 195px;
+    }
+    @include lg {
+      height: 170px;
+    }
+  }
+
+  &__swiper-container {
+    padding-bottom: 30px;
+
+    @include lg {
+      max-width: 1280px;
+      padding-top: 20px;
+    }
+  }
+
+  &__swiper-button-next {
+    width: 42px;
+    height: 42px;
+    background: url("./../../images/tabs-slider-btn-next_grey.png") no-repeat center;
+    top: 84%;
+    right: calc(50% - 57px);
+
+    @include sm {
+      top: 86%;
+    }
+  }
+
+
+  &__swiper-button-prev {
+    width: 42px;
+    height: 42px;
+    background: url("./../../images/tabs-slider-btn-next_grey.png") no-repeat center;
+    transform: rotate(180deg);
+    top: 84%;
+    left: calc(50% - 57px);
+
+    @include sm {
+      top: 86%;
+
+    }
+  }
+
+  &__swiper-button-next:hover, &__swiper-button-prev:hover {
+    background: url("./../../images/tabs-slider-btn_grey-hover.png") no-repeat center;
+  }
+
+  &__top-line {
+    position: absolute;
+    top: 0;
+    min-width: 2560px;
+    left: 50%;
+    transform: translate(-50%);
+    height: auto;
+  }
+
+  &__bottom-line {
+    position: absolute;
+    bottom: 0;
+    min-width: 2560px;
+    left: 50%;
+    transform: translate(-50%) rotate(180deg);
+    height: auto;
+  }
+
+
+}

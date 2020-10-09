@@ -1,0 +1,60 @@
+//MEDIA SCREENS:
+$MEDIA : (
+        m: 320px,
+        m-land: 568px,
+        sm:768px,
+        md:1024px,
+        lg:1280px,
+        xl:1366px,
+        xll:1440px,
+        hd:1920px,
+        xhd:2300px
+);
+
+@mixin m-land {
+    @media (min-width : map_get($MEDIA, m-land)) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media (min-width : map_get($MEDIA, sm)) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (min-width : map_get($MEDIA, md)) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (min-width : map_get($MEDIA, lg)) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (min-width : map_get($MEDIA, xl)) {
+        @content;
+    }
+}
+
+@mixin xll {
+    @media (min-width : map_get($MEDIA, xll)) {
+        @content;
+    }
+}
+
+@mixin hd {
+    @media (min-width : map_get($MEDIA, hd)) {
+        @content;
+    }
+}
+
+@mixin xhd {
+    @media (min-width : map_get($MEDIA, xhd)) {
+        @content;
+    }
+}

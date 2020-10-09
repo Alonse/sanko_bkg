@@ -1,0 +1,73 @@
+@import "./../../common/constants";
+
+.tabs-complex {
+
+  &__inner {
+    background-image: url("./../../images/eq-bgd.jpg");
+    background-repeat: no-repeat;
+    background-color: #2D3D52;
+    background-size: auto 1000px;
+    background-position: center top;
+  }
+
+  &__control {
+    background: #252F3D;
+    border-radius: 8px;
+    display: flex;
+
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 288px;
+    position: relative;
+
+    @include sm {
+      margin: 0;
+      width: 360px;
+    }
+  }
+
+  &__button {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #E9EDF2;
+    z-index: 1;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    padding: 16px 20px;
+
+    @include sm {
+      font-size: 14px;
+      padding: 20px 28px;
+    }
+  }
+
+  &__roller {
+    position: absolute;
+    border-radius: 6px;
+    top: 4px;
+    left: 4px;
+    height: 44px;
+    width: 186px;
+    background:  rgba(0, 144, 255, 1);
+    transition: .5s;
+
+    @include sm {
+      width: 231px;
+      height: 52px;
+    }
+  }
+
+  &__roller_active {
+    width: 96px;
+    transition: .5s;
+    left: 188px;
+
+    @include sm {
+      width: 117px;
+      left: 240px;
+    }
+  }
+}

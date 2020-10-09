@@ -1,0 +1,42 @@
+mixin tabs-slider()
+    +b.tabs-slider
+        +e.swiper-container.swiper-container
+            +e.navigation-inner
+                +e.title Направления развития
+                +e.navigation
+                    +e.swiper-button-prev.swiper-button-prev
+                    +e.pagination
+                    +e.swiper-button-next.swiper-button-next
+            +e.UL.swiper-wrapper.swiper-wrapper
+                +e.LI.swiper-slide.swiper-slide.tabs-slider__swiper-slide_white(id='tab-1')
+                    +e.A(href='#tabs-1')
+                        +e.slide-pic(src=require('./../images/tabs-slide-1.svg'), alt='')
+                        +e.H3 Командообразование и решение проблем
+                        +e.slide-button
+                            svg(xmlns='http://www.w3.org/2000/svg' width='100' height='20' viewbox='0 0 100 20' fill='none')
+                                path(d='M50 20C34.9576 20 25.4237 7.40741 -2.38419e-06 -8.39011e-07C27.5424 -4.93329e-06 50 -2.18557e-06 50 -2.18557e-06C67.7245 -1.41081e-06 24.5763 2.35252e-07 100 3.53213e-06C74.1525 7.40741 69.2797 20 50 20Z' fill='#354457')
+                        +e.slide-button-2(src=require('./../images/tabs-slide-button-2.svg'), alt='')
+                +e.LI.swiper-slide.swiper-slide(id='tab-2')
+                    +e.A(href='#tabs-2')
+                        +e.slide-pic(src=require('./../images/tabs-slide-2.svg'), alt='') tabs-slide-1
+                        +e.H3 Тренинг Leading with Questions
+                        +e.slide-button
+                            svg(xmlns='http://www.w3.org/2000/svg' width='100' height='20' viewbox='0 0 100 20' fill='none')
+                                path(d='M50 20C34.9576 20 25.4237 7.40741 -2.38419e-06 -8.39011e-07C27.5424 -4.93329e-06 50 -2.18557e-06 50 -2.18557e-06C67.7245 -1.41081e-06 24.5763 2.35252e-07 100 3.53213e-06C74.1525 7.40741 69.2797 20 50 20Z' fill='#354457')
+                        +e.slide-button-2(src=require('./../images/tabs-slide-button-2.svg'), alt='')
+                +e.LI.swiper-slide.swiper-slide(id='tab-3')
+                    +e.A(href='#tabs-3')
+                        +e.slide-pic(src=require('./../images/tabs-slide-3.svg'), alt='')
+                        +e.H3 Долгосрочные программы развития
+                        +e.slide-button
+                            svg(xmlns='http://www.w3.org/2000/svg' width='100' height='20' viewbox='0 0 100 20' fill='none')
+                                path(d='M50 20C34.9576 20 25.4237 7.40741 -2.38419e-06 -8.39011e-07C27.5424 -4.93329e-06 50 -2.18557e-06 50 -2.18557e-06C67.7245 -1.41081e-06 24.5763 2.35252e-07 100 3.53213e-06C74.1525 7.40741 69.2797 20 50 20Z' fill='#354457')
+                        +e.slide-button-2(src=require('./../images/tabs-slide-button-2.svg'), alt='')
+                +e.LI.swiper-slide.swiper-slide(id='tab-4')
+                    +e.A(href='#tabs-4')
+                        +e.slide-pic(src=require('./../images/tabs-slide-4.svg'), alt='')
+                        +e.H3 Сертификация
+                        +e.slide-button
+                            svg(xmlns='http://www.w3.org/2000/svg' width='100' height='20' viewbox='0 0 100 20' fill='none')
+                                path(d='M50 20C34.9576 20 25.4237 7.40741 -2.38419e-06 -8.39011e-07C27.5424 -4.93329e-06 50 -2.18557e-06 50 -2.18557e-06C67.7245 -1.41081e-06 24.5763 2.35252e-07 100 3.53213e-06C74.1525 7.40741 69.2797 20 50 20Z' fill='#354457')
+                        +e.slide-button-2(src=require('./../images/tabs-slide-button-2.svg'), alt='')

@@ -1,0 +1,13 @@
+include ./../mixins
+doctype html
+html
+    +head()
+    body(class="app")
+        //+loader('loader__spinner_falcon')
+        +header()
+        main.main(id='main')
+            div.gradient-inner
+                +contacts-page()
+                +hub()
+                +footer()
+                +compass-button()

@@ -1,0 +1,15 @@
+mixin center()
+    +b.center
+        +e.inner
+            +e.title Центр знаний
+            +e.subtitle Читаем. Смотрим. Слушаем.
+            +e.wrapper
+                +e.bgd-button(src=require('./../images/center-bgd.svg'), alt='')
+                +e.swiper-container.swiper-container
+                    +e.swiper-wrapper.swiper-wrapper
+                        +e.A.swiper-slide.swiper-slide(href='#')
+                            +e.H4.slide-title Видео
+                        +e.A.swiper-slide.swiper-slide(href='#')
+                            +e.H4.slide-title Блог
+                        +e.A.swiper-slide.swiper-slide(href='#')
+                            +e.H4.slide-title Аудио

@@ -1,0 +1,78 @@
+mixin header()
+    +b.header
+        +e.dropdown-menu
+            +e.dropdown-menu-inner
+                +e.A.dropdown-menu-link(href='#')
+                    +e.filter-header
+                        +e.menu-link-title Главная страница
+                +e.filter-inner
+                    +e.filter
+                        +e.filter-header
+                            +e.A.filter-title Направления деятельности
+                            +e.filter-icon
+                                +e.SVG(xmlns="http://www.w3.org/2000/svg" width="6" height="9" viewBox="0 0 6 9" fill="none")
+                                    +e.PATH.path(d="M1.5 1.5L4.5 4.5L1.5 7.5" stroke-width="1.3" stroke-linecap="round")
+                        +e.filter-body
+                            +e.UL.filter-list
+                                +e.LI.filter-item
+                                    +e.A(href='#') Осознанность & EQ
+                                +e.LI.filter-item
+                                    +e.A(href='#') Стратегия и изменения
+                                +e.LI.filter-item
+                                    +e.A(href='#') Развитие лидеров
+                                +e.LI.filter-item
+                                    +e.A(href='#') Индивидуальный коучинг
+                                +e.LI.filter-item
+                                    +e.A(href='#') Программы online формата
+                    +e.filter
+                        +e.filter-header
+                            +e.A.filter-title Будущие меропирятия
+                    +e.filter
+                        +e.filter-header
+                            +e.A.filter-title Центр знаний
+                            +e.filter-icon
+                                +e.SVG(xmlns="http://www.w3.org/2000/svg" width="6" height="9" viewBox="0 0 6 9" fill="none")
+                                    +e.PATH.path(d="M1.5 1.5L4.5 4.5L1.5 7.5" stroke-width="1.3" stroke-linecap="round")
+                        +e.filter-body
+                            +e.UL.filter-list.header__filter-list_row
+                                +e.LI.filter-item
+                                    +e.A(href='#') Аудио
+                                +e.LI.filter-item
+                                    +e.A(href='#') Видео
+                                +e.LI.filter-item
+                                    +e.A(href='#') Блог
+                                +e.LI.filter-item
+                                    +e.A(href='#') Рекомендуемая литература
+                                +e.LI.filter-item
+                                    +e.A(href='#') Тематические исследования
+                    +e.filter
+                        +e.filter-header
+                            +e.A.filter-title Обо мне
+                +e.soc-inner
+                    +e.A.soc-inner-item(href="")
+                        +e.soc-inner-image(src=require('./../images/phone-soc.svg'), alt='')
+                    +e.A.soc-inner-item(href="")
+                        +e.soc-inner-image(src=require('./../images/tel-soc.svg'), alt='')
+                    +e.A.soc-inner-item(href="")
+                        +e.soc-inner-image(src=require('./../images/viber-soc.svg'), alt='')
+                    +e.A.soc-inner-item(href="")
+                        +e.soc-inner-image(src=require('./../images/wa-soc.svg'), alt='')
+                    +e.A.soc-inner-item(href="")
+                        +e.soc-inner-image(src=require('./../images/email-soc.svg'), alt='')
+                +e.socials-inner
+                    +e.lang
+                        +e.lang-icon(src=require('./../images/lang-icon.svg'), alt='')
+                        +e.A.lang-link.header__lang-link_active(href='#') RU
+                        +e.A.lang-link(href='#') EN
+                    +socials()
+        .container
+            +e.inner
+                +e.logo
+                    +e.logo-pic(src=require('./../images/sanko-logo.svg'), alt='')
+                +e.right-bar
+                    +menu()
+                    +login()
+                    //+lang()
+                    +e.A.login-link
+                        +e.IMG.login-image(src=require('./../images/login.svg'), alt='')
+                    +burger()

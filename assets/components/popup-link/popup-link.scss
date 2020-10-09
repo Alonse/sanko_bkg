@@ -1,0 +1,43 @@
+@import "./../../common/constants";
+
+.popup-link {
+  margin: 20px 0 34px;
+
+  &__inner {
+
+    @include lg {
+      margin-left: 52px;
+    }
+
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #D1D3D4;
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    font-size: 14px;
+    line-height: 19px;
+    color: #D1D3D4;
+    margin-bottom: 20px;
+    max-height: 58px;
+    overflow: hidden;
+
+    @include sm {
+
+    }
+  }
+
+  &__item {
+    font-size: 14px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    cursor: pointer;
+  }
+
+
+}

@@ -1,0 +1,28 @@
+@import "./../../common/constants";
+
+.compass-animation {
+  width: 194px;
+  height: 194px;
+
+  &__inner {
+    position: relative;
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+
+  }
+  &__shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+
+
+}

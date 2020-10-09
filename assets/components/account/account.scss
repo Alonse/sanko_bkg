@@ -1,0 +1,372 @@
+@import "./../../common/constants";
+
+.account {
+
+  background: #F1F3F6;
+  padding-top: 80px;
+  padding-bottom: 50px;
+
+  @include sm{
+    padding-top: 62px;
+  }
+
+  &__wrapper{
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 30px 20px;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    &:before{
+
+      content: '';
+      display: block;
+      width: 12px;
+      height: 44px;
+      position: absolute;
+      left: 0;
+      top: 30px;
+      background-image: url(./../../images/green-checkout.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+
+    }
+
+  }
+
+  &__title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #252F3D;
+
+    @include lg{
+      line-height: 44px;
+    }
+
+  }
+
+  &__list{
+    margin-top: 30px;
+
+    @include md{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    @include lg{
+      max-width: 820px;
+    }
+
+  }
+
+  &__item{
+    margin-bottom: 28px;
+    box-sizing: border-box;
+
+    @include md{
+      width: 48%;
+    }
+  }
+
+  &__item-wrapper{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  &__item-label{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #939EA7;
+    display: block;
+
+  }
+
+  .disable{
+    .account__item-change{
+      display: block;
+    }
+    .account__item-input{
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 22px;
+      color: #252F3D;
+      border: none;
+    }
+  }
+
+  &__item-change{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #B9B9B9;
+    border-bottom: 1px solid #B9B9B9;
+    margin-left: 10px;
+    display: none;
+  }
+
+  &__item-input{
+    background: #FFFFFF;
+    border: 1px solid #D6D8D9;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+
+    box-sizing: border-box;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+
+
+    &::placeholder{
+      color: #B9B9B9;
+    }
+
+  }
+
+
+  &__button{
+    width: 181px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    cursor: pointer;
+    background: #8BCC32;
+    border-radius: 4px;
+    border: none;
+
+
+  }
+
+  &__logo-check{
+    display: none;
+
+    @include lg{
+      display: block;
+      width: 145.77px;
+      height: 129px;
+      opacity: 0.36;
+      right: 28px;
+      top: 37px;
+      position: absolute;
+    }
+
+  }
+
+  &__history{
+    margin-top: 45px;
+  }
+
+  &__history-wrapper{
+    display: flex;
+    align-items: center;
+
+
+    img{
+      width: 12px;
+      height: 18px;
+      min-width: 12px;
+      min-height: 18px;
+      margin-left: 20px;
+      transform: rotate(-90deg);
+      transition: .5s all;
+    }
+
+    &_active{
+      img{
+        transform: rotate(0);
+        transition: .5s all;
+      }
+    }
+
+  }
+
+  label.error{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgb(234, 71, 25);
+    padding-top: 5px;
+    text-transform: lowercase;
+
+  }
+
+  input.error{
+    border: 1px solid rgb(234, 71, 25);
+  }
+
+  textarea.error{
+    border: 1px solid rgb(234, 71, 25);
+  }
+
+  &__history-title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #252F3D;
+
+
+
+  }
+
+  &__history-list{
+    margin-top: 24px;
+    display: none;
+
+
+
+  }
+
+  &__history-item{
+    margin-bottom: 20px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 13px 22px;
+
+
+
+  }
+
+  &__history-item-title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #252F3D;
+
+    @include lg{
+      font-size: 24px;
+      line-height: 33px;
+    }
+
+  }
+
+  &__history-item-content{
+
+    @include md{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    @include lg{
+      margin-top: 20px;
+    }
+  }
+
+  &__history-item-content-text{
+    border-bottom: 1px solid #C9D1D5;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    &:nth-child(4){
+      .account__history-item-desc{
+        font-size: 24px;
+        line-height: 33px;
+      }
+    }
+
+    &:nth-child(5){
+      .account__history-item-desc{
+        font-size: 32px;
+        line-height: 44px;
+      }
+    }
+
+    @include lg{
+      border-right: 1px solid #C9D1D5;
+      border-bottom: none;
+      padding-right: 40px;
+      &:last-child{
+        border-right: none;
+        padding-right: 0px;
+      }
+
+    }
+
+    &:last-child{
+      border-bottom: none;
+
+      @include md{
+        width: 100%;
+      }
+
+      @include lg{
+        width: 157px;
+      }
+
+    }
+
+  }
+
+  &__history-item-content-text-title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #939EA7;
+    display: block;
+    margin-bottom: 13px;
+  }
+
+  &__history-item-content-text-wrapper{
+    display: flex;
+    align-items: center;
+  }
+
+  &__history-item-image-wrapper{
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    min-height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+  }
+
+  &__history-item-desc{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #252F3D;
+
+    @include md{
+      max-width: 237px;
+    }
+
+  }
+
+
+
+}

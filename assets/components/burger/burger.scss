@@ -1,0 +1,53 @@
+@import "./../../common/constants";
+
+.burger {
+
+  min-width: 24px;
+  height: 24.1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  overflow: hidden;
+
+  @include lg {
+    display: none;
+  }
+
+  &__line {
+    background: #797E84;
+    width: 24px;
+    height: 1.2px;
+    transition: all 600ms ;
+  }
+
+  &__line-middle {
+    width: 16px;
+    transition: all 600ms;
+    height: 1.1px;
+  }
+
+  &__line-up_active {
+    width: 34px;
+    transform: rotate(45deg);
+    transform-origin: left top;
+    transition: all 600ms ;
+    background: #8BCC32;
+
+  }
+
+  &__line-middle_active {
+    transform: translateX(20px);
+    opacity: 0;
+    transition: all 600ms ;
+  }
+
+  &__line-bottom_active {
+    width: 34px;
+    transform: rotate(-45deg);
+    transform-origin: left bottom;
+    transition: all 600ms ;
+    background: #8BCC32;
+  }
+
+}

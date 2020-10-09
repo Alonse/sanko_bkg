@@ -1,0 +1,154 @@
+@import "./../../common/constants";
+
+.projects {
+  font-family: "Open Sans", sans-serif;
+
+  &__inner {
+    padding: 30px 0 60px 0;
+
+    @include sm {
+      padding: 40px 0 80px 0;
+    }
+    @include md {
+      padding: 60px 0 80px 0;
+    }
+
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #252F3D;
+    margin-bottom: 16px;
+
+    @include sm {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 44px;
+      letter-spacing: 0.04em;
+    }
+  }
+
+  &__subtitle {
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #252F3D;
+    margin-bottom: 20px;
+
+    @include sm {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__swiper-slide {
+    border-radius: 8px;
+    width: 260px;
+    border: 1px solid #E9EDF2;
+
+    @include sm {
+      width: 400px;
+    }
+
+    @include md {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__name {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 16px;
+    background: linear-gradient(185.34deg, #53616D -29.5%, #2D3D52 116.36%);
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    align-items: center;
+
+    @include sm {
+      font-size: 16px;
+      line-height: 22px;
+      padding: 19px 32px;
+    }
+  }
+
+  &__content {
+    padding: 20px;
+    UL {
+      list-style: decimal outside;
+      margin-left: 20px;
+    }
+    LI {
+      font-size: 14px;
+      line-height: 19px;
+      color: #000000;
+      margin-bottom: 16px;
+
+      SPAN {
+        color: #000000;
+      }
+    }
+  }
+
+  &__logos {
+    background: #F5F6F8;
+    border-radius: 0 0 8px 8px;
+  }
+
+  &__logos {
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+
+    @include sm {
+
+    }
+  }
+
+
+
+  &__logo-inner {
+    width: calc(100%/3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+
+  }
+
+  &__logo-wrapper{
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  &__logos-pic {
+    height: auto;
+    width: 80%;
+
+
+  }
+
+  &__swiper-wrapper {
+
+    @include md {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    @include lg {
+      max-width: 1240px;
+    }
+  }
+
+}

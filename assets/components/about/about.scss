@@ -1,0 +1,103 @@
+@import "./../../common/constants";
+
+.about {
+
+  font-family: "Open Sans", sans-serif;
+
+  &__inner {
+    background-color: #2D3D52;
+    padding-top: 56px;
+    overflow: hidden;
+    background-image: url("./../../images/about-bgd.png");
+    background-size: auto 100%;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    @include sm {
+      padding-top: 85px;
+    }
+  }
+
+  &__wrapper {
+
+    @include sm {
+      display: flex;
+    }
+  }
+
+  &__content {
+
+    @include sm {
+      min-width: 372px;
+    }
+
+    @include md {
+      min-width: 606px;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #E9EDF2;
+    margin: 16px 0;
+
+    @include sm {
+      margin: 27px 0 20px;
+      font-size: 32px;
+      line-height: 44px;
+      letter-spacing: 0.04em;
+    }
+  }
+
+  &__description {
+    P {
+      font-size: 14px;
+      line-height: 19px;
+      color: #E9EDF2;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: #8BCC32;
+  }
+
+  &__portrait {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    @include sm {
+      width: 460px;
+      min-width: 460px;
+      position: relative;
+      right: 60px;
+    }
+
+    @include md {
+      right: 40px;
+    }
+
+    @include lg {
+      right: 0px;
+    }
+  }
+
+  &__portrait-pic {
+    min-width: 370px;
+    width: 370px;
+    height: auto;
+
+    @include sm {
+      width: 100%;
+    }
+  }
+
+
+}

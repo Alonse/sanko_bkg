@@ -1,0 +1,29 @@
+@import "./../../common/constants";
+
+.compass-button {
+
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  overflow: hidden;
+  width: 74px;
+  height: 74px;
+  z-index: 13;
+
+  @include sm {
+
+  }
+
+  @include lg {
+    width: 100px;
+    height: 100px;
+    bottom: 40px;
+    right: 40px;
+  }
+
+  &__pic {
+    width: 100%;
+    height: auto;
+  }
+
+}

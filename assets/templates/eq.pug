@@ -1,0 +1,13 @@
+include ./../mixins
+doctype html
+html
+    +head()
+    body(class="app app_color")
+        //+loader('loader__spinner_falcon')
+        +header()
+        +popup()
+        +popup()
+        main.main(id='main')
+            +tabs-complex()
+            +footer()
+            +compass-button()

@@ -1,0 +1,270 @@
+/*
+Theme Name: Sanyko
+Theme URI: https://mastak.by
+Author: the Mastak group
+Description:
+Requires at least: 4.7
+Requires PHP: 5.2.4
+License:
+License URI:
+Text Domain: Sanko
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Normalize
+2.0 Accessibility
+3.0 Alignments
+4.0 Clearings
+5.0 Typography
+6.0 Forms
+7.0 Formatting
+8.0 Lists
+9.0 Tables
+10.0 Links
+11.0 Featured Image Hover
+12.0 Navigation
+13.0 Layout
+   13.1 Header
+   13.2 Front Page
+   13.3 Regular Content
+   13.4 Posts
+   13.5 Pages
+   13.6 Footer
+14.0 Comments
+15.0 Widgets
+16.0 Media
+   16.1 Galleries
+17.0 Customizer
+18.0 SVGs Fallbacks
+19.0 Media Queries
+20.0 Print
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.0 Normalize
+Styles based on Normalize v5.0.0 @link https://github.com/necolas/normalize.css
+--------------------------------------------------------------*/
+
+.popupTab li{
+    display: block !important;
+   
+  }
+  
+  .popupTab{
+   z-index: -1;
+  }
+  
+  .popupTab.popup_active{
+   z-index: 999;
+  }
+  
+  .add_link{
+   color: #ffffff !important;
+   display: block !important;
+  }
+  
+  .events__description-text li{
+   max-height: 81px;
+      overflow-y: hidden;
+  }
+  
+  .events__description-text OL {
+      list-style: none !important;
+      margin-left: 0 !important;
+  }
+  
+  .events__description-text ol li{
+      display: block;
+   align-items:center;
+   counter-increment: inst;
+   margin-left: 12px;
+       flex-wrap: wrap;
+       padding-left: 10px;
+   max-height: unset !important;
+  }
+  
+  .events__description-text ol li ol li{
+     display: flex;
+      align-items: flex-start;
+      counter-increment: instNew;
+      margin-left: 0;
+      padding-left: 0;
+   
+  }
+  
+  .events__description-text ol li span{
+   display: block;
+      padding-left: 10px;
+  }
+  
+  
+  
+  .events__description-text ol li ul li{
+      display: flex;
+      align-items: flex-start;
+      margin-left: 0;
+   padding-left: 0;
+  }
+  
+  .events__description-text ol li:before{
+   content: counter(inst) ". "; 
+   position: absolute;
+  }
+  
+  .events__description-text ol li ol li:before{
+   content: counter(instNew) ". "; 
+  }
+  
+  .events__description-text ol li ul li:before{
+   content: "• ";
+   padding-top: 1px;
+  }
+  
+  .events__description-text ol ol{
+   margin-left: 12px !important;
+   width: 100%;
+  }
+  
+  .events__description-text ol ul{ 
+   list-style-type: none !important; 
+   padding-left: 12px !important;
+   list-style-position: inside;
+   width: 100%;
+  }
+  
+  .events__description-text ol ul li{ 
+   list-style-type: none !important; 
+  }
+  
+  @media (min-width : 1280px) {
+   
+   .events__description-text li{
+   max-height: auto;
+      overflow: hidden !important;
+  }
+   
+          .add_link{
+   display: none !important;
+  }
+      }
+  
+  .popupTab .popup__title{
+   margin-top: 30px;
+  }
+
+  .woocommerce form .form-row{
+      padding:0!important;
+      margin:0!important;
+    margin-bottom: 28px!important;
+    -webkit-box-sizing: border-box!important;
+    box-sizing: border-box!important;
+
+  }
+  .woocommerce form .form-row label{
+    display: -webkit-box!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -webkit-box-align: center!important;
+    -ms-flex-align: center!important;
+    align-items: center!important;
+    margin-bottom: 10px!important;
+    line-height:1!important;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #939ea7;
+    display: block;
+  }
+  .woocommerce form .form-row .required{
+      color:#939ea7!important;
+  }
+  .woocommerce form .form-row input.input-text, .woocommerce form .form-row textarea{
+    background: #fff;
+    border: 1px solid #d6d8d9;
+    -webkit-box-sizing: border-box;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    box-sizing: border-box;
+    height: 40px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 15px;
+  }
+  .account__list .form-row{
+    width: 48%;
+  }
+  .account__list .account__item-label{
+      display:flex;
+  }
+  .account .disable .account__item-change{
+      cursor: pointer;
+  }
+  .account__item-change{
+      font-size:10px;
+  }
+  .woocommerce .account form .disable .woocommerce-input-wrapper input {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #252f3d;
+    border: none;
+    pointer-events: none;
+}
+.account__history-list{
+    display:block;
+}
+.woocommerce-error {
+    border-top-color: #8bcc32!important;
+}
+.woocommerce-error::before {
+    content: "\e016";
+    color: #8bcc32!important;
+}
+.show-password-input{
+    display:none!important;
+}
+/* .header__right-bar{
+    align-items: center;
+} */
+/* .login{
+    border-right: 0px solid #797e84!important;
+    padding-right: 0px!important;
+} */
+/* .login__label{
+    width:auto!important;
+} */
+.checkout__button-input::-webkit-outer-spin-button,
+.checkout__button-input::-webkit-inner-spin-button {
+  -webkit-appearance: none!important;
+  margin: 0!important;
+}
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.checkout__button-input{
+    cursor: pointer;
+}
+.menu__filter{
+    margin-right:0!important;
+    padding-right:2rem;
+}

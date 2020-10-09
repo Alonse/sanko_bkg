@@ -1,0 +1,52 @@
+mixin signup()
+    +b.signup
+        +e.inner
+            .container
+                +breadcrumbs()
+                +e.FORM.wrapper(id="contact-form")
+                    +e.IMG.logo-check(src=require('./../images/logo-check.svg'), alt='')
+                    +e.SPAN.title Регистрация
+                    +e.wrapper-content
+                        +e.links
+                            +e.A.link(href="#") вход (уже зарегистрирован)
+                            +e.A.link(href="#") забыл пароль
+                        +e.list
+                            +e.item
+                                +e.item-wrapper
+                                    +e.LABEL.item-label Имя*
+                                +e.INPUT.item-input(name="name" type="text" placeholder="Иван")
+                            +e.item
+                                +e.item-wrapper
+                                    +e.LABEL.item-label Фамилия*
+                                +e.INPUT.item-input(name="surname" type="text" placeholder="Иванов")
+                            +e.item
+                                +e.item-wrapper
+                                    +e.LABEL.item-label Электронная почта*
+                                +e.INPUT.item-input(name="email" type="text" placeholder="...@...")
+                            +e.item
+                                +e.item-wrapper
+                                    +e.LABEL.item-label Пароль
+                                +e.INPUT.item-input(name="password" type="password" placeholder="********" )
+                            +e.item
+                                +e.item-wrapper
+                                    +e.LABEL.item-label повтор пароля*
+                                +e.INPUT.item-input(name="passwordConform" type="password" placeholder="********" )
+                            +e.agreement
+                                +e.LABEL.container.check
+                                    | Cогласен на обработку данных
+                                    input(type='checkbox' name="agree" checked='checked' id="checkbox_check")
+                                    +e.SPAN.checkmark
+                                +e.LABEL.container(id="news")
+                                    | Cогласен на рассылку для компании
+                                    input(type='checkbox' name="news" checked='checked' id="checkbox_check2")
+                                    +e.SPAN.checkmark
+                            +e.BUTTON.button(type="submit") Регистрация
+                        +e.social
+                            +e.SPAN.title-item Через соцсети
+                            +e.social-wrapper
+                                +e.A.soc-item(href="#")
+                                    +e.IMG.soc-item-image(src=require('./../images/fb.svg'), alt='')
+                                +e.A.soc-item(href="#")
+                                    +e.IMG.soc-item-image(src=require('./../images/gg.svg'), alt='')
+
+

@@ -1,0 +1,21 @@
+mixin contacts()
+    +b.contacts
+        +e.inner
+            +e.title Ответим на вопросы
+            +e.links
+                +e.tels
+                    +e.link-inner
+                        +e.A.link(href='tel:+79654348629') +7 965 434 86 29 (РФ)
+                        +e.icons
+                            +e.A(href='tg://resolve?domain=+79654348629')
+                            +e.A(href='viber://chat?number=+79654348629')
+                            +e.A(href='whatsapp://send?phone=+79654348629')
+                    +e.link-inner
+                        +e.A.link(href='tel:+375447541518') +375 44 754 15 18 (РБ)
+                        +e.icons
+                            +e.A(href='tg://resolve?domain=+375447541518')
+                            +e.A(href='viber://chat?number=+375447541518')
+                            +e.A(href='whatsapp://send?phone=+375447541518')
+                +e.A.link.contacts__email(href='mailto:yep@dennissanko.com') yep@dennissanko.com
+                +e.A.link.contacts__email(href="https://t.me/denissanko_support") Техническая поддержка
+                +socials()

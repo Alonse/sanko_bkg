@@ -1,0 +1,220 @@
+@import "./../../common/constants";
+
+.front {
+  position: relative;
+  background: #18212C;
+
+  &__bgd {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-image: url("./../../images/front-bgd.jpg");
+    background-size: auto 100%;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+  }
+
+
+  &__inner {
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    padding-top: 56px;
+
+    @include sm {
+      padding-top: 85px;
+
+    }
+  }
+
+  &__content {
+    position: relative;
+    overflow: hidden;
+
+    @include sm {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 22px;
+      padding-right: 22px;
+
+    }
+
+    @include md {
+      padding-right: 0px;
+    }
+
+    @include lg {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+  }
+
+  &__text {
+    margin-top: 40px;
+
+    @include sm {
+      max-width: 400px;
+      margin-top: 75px;
+      z-index: 1;
+    }
+    @include md {
+      max-width: 540px;
+      margin-top: 110px;
+    }
+
+  }
+
+  &__text-item-inner {
+    position: relative;
+  }
+
+  &__text-item:nth-child(1) {
+    width: 145px;
+    height: auto;
+    display: block;
+    margin: 0 auto 13px;
+
+
+
+    @include sm {
+      width: 226px;
+      margin: 0 0 20px 0;
+    }
+
+    @include md {
+      width: 314px;
+      margin: 0 0 30px 0;
+    }
+    @include lg {
+
+      margin: 0 0 30px 0;
+    }
+  }
+
+  &__text-item:nth-child(2) {
+    width: 234px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+
+
+    @include sm {
+      width: 367px;
+      margin: 0 0 20px 0;
+    }
+
+    @include md {
+      width: 510px;
+    }
+    @include lg {
+      margin: 0 0 30px 80px;
+    }
+  }
+
+  &__text-border {
+    background: linear-gradient(178.68deg, #8BCC32 16.29%, #91DF26 83.71%);
+    opacity: 0.2;
+    width: 100%;
+    height: 7px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  &__portrait {
+    display: flex;
+    margin: 0 auto;
+    align-items: flex-start;
+    justify-content: left;
+
+    width: 277px;
+
+    @include m-land {
+
+    }
+
+    @include sm {
+      width: 392px;
+
+    }
+    @include md {
+      width: 491px;
+
+    }
+
+    @include lg {
+      margin-right: 85px;
+    }
+  }
+
+  &__portrait-pic {
+    width: 100%;
+    height: auto;
+  }
+
+  &__partner-logo {
+    height: 30px;
+    width: auto;
+
+    @include sm {
+      height: 60px;
+    }
+  }
+
+  &__swiper-container {
+    position: absolute;
+    bottom: 20px;
+
+    @include sm {
+      bottom: 30px;
+    }
+
+    @include lg {
+      bottom: 40px;
+
+      max-width: 1280px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__swiper-wrapper {
+
+  }
+
+  &__swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__shadow {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    min-width: 2560px;
+    height: auto;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  &__front-line-inner {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 2560px;
+  }
+
+  &__front-line {
+    min-width: 2560px;
+    height: auto;
+  }
+
+  &__front-line-bgd {
+    flex-grow: 1;
+    background: #F1F3F6;
+  }
+}

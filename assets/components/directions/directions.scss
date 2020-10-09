@@ -1,0 +1,177 @@
+@import "./../../common/constants";
+
+
+.directions {
+  font-family: "Open Sans", sans-serif;
+  padding-top: 56px;
+
+
+  @include lg {
+    background-position: 65% 100%;
+  }
+
+  @include xhd {
+    background-size: auto 120%;
+  }
+
+
+  @include sm {
+    padding-top: 85px;
+
+  }
+
+  &__inner {
+  }
+
+  &__wrapper {
+    border-radius: 8px;
+    background: linear-gradient(216.84deg, #53616D -21.35%, #2D3D52 115.33%);
+    margin: 1rem 0 2rem 0;
+
+    @include sm {
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 12px 12px 12px 0;
+      margin: 0rem 0 2rem 0
+    }
+
+    @include lg {
+      margin: 0rem 0 4rem 0
+    }
+  }
+
+
+  &__bgd-pic {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+
+    @include sm {
+      border-radius: 8px;
+      width: 330px;
+      margin: 0px 0 10px 20px;
+      float: right;
+    }
+
+    @include lg {
+      width: 400px;
+    }
+  }
+
+  &__content {
+    position: relative;
+    padding: 20px 20px 5px 20px;
+    border-radius: 0 0 8px 8px;
+
+    @include sm {
+      padding: 0px 0px 0px 32px;
+
+    }
+
+  }
+
+  .color-button {
+    width: 44px;
+    position: absolute;
+    left: -20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include sm {
+      left: -32px;
+    }
+
+    @include lg {
+
+    }
+  }
+
+
+  &__content-title {
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #E9EDF2;
+    width: min-content;
+    margin-bottom: 28px;
+    position: relative;
+
+    animation: 1s anim ease forwards;
+
+    @include sm {
+      font-size: 32px;
+      line-height: 44px;
+      letter-spacing: 0.04em;
+      margin-bottom: 20px;
+      width: unset;
+    }
+
+    @include md {
+      margin-top: 20px;
+    }
+
+    @include lg {
+      margin-top: 35px;
+    }
+  }
+
+  &__content-text {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: 1s anim ease forwards .5s;
+
+
+    P {
+      font-size: 14px;
+      line-height: 19px;
+      color: #E9EDF2;
+      margin-bottom: 20px;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    UL {
+      list-style: outside;
+      margin-left: 15px;
+      font-size: 14px;
+      line-height: 19px;
+      color: #E9EDF2;
+      margin-bottom: 20px;
+    }
+    OL {
+      list-style: decimal outside;
+      margin-left: 15px;
+      font-size: 14px;
+      line-height: 19px;
+      color: #E9EDF2;
+      margin-bottom: 20px;
+    }
+    STRONG, B {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 19px;
+    }
+    EM, I {
+      font-style: italic;
+
+    }
+
+  }
+
+
+}
+
+
+@keyframes anim {
+  0%{
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

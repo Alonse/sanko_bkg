@@ -1,0 +1,33 @@
+mixin form()
+    +b.form
+        +e.contacts-portrait(src=require('./../images/contacts-portrait.png'), alt='')
+        +e.inner
+            +e.addText
+                +e.addText-wrapper
+                    +e.addLogo(src=require('./../images/form.svg'), alt='')
+                    +e.addContent
+                        +e.SPAN.titleText Спасибо!
+                        +e.SPAN.descText Ваше сообщение успешно отправлено.  В ближайшее время мы обязательно свяжемся с вами
+            +e.title Оставить заявку
+            +e.title-alt Задайте Денису вопрос
+            +color-button()
+            +e.FORM.content(id="contact-form")
+                +e.wrapper
+                    +e.input-inner
+                        +e.LABEL.label(for='name') Ваше имя
+                        +e.INPUT.input(name="name" id='input-name' placeholder='Иванов Иван')
+                    +e.input-inner
+                        +e.LABEL.label(for='phone') Контактный телефон
+                        +e.INPUT.input(name="phone" id='input-phone' placeholder='+375  __  ___  __  __')
+                    +e.input-inner
+                        +e.LABEL.label(for='email') Электронная почта
+                        +e.INPUT.input(name="email" id='input-email' placeholder='ivan.ivanov@mail.by')
+                +e.textarea-wrapper
+                    +e.LABEL.label(for='message') Сообщение
+                    +e.TEXTAREA.textarea(name="message" id='input-email' placeholder='Ваше сообщение')
+                +e.agreement
+                    +e.LABEL.container
+                      | Я согласен с условиями обработки данных
+                      input(type='checkbox' checked='checked' id="checkbox_check")
+                      +e.SPAN.checkmark
+                    +e.BUTTON.button(type='submit') Отправить заявку

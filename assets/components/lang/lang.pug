@@ -1,0 +1,18 @@
+mixin lang()
+    +b.lang
+        +e.label
+            +e.icon
+                +e.SVG(xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none")
+                    +e.CIRCLE(cx="10" cy="10" r="9.35" stroke="#797E84" stroke-width="1.3")
+                    +e.LINE(x1="0.65" y1="9.87637" x2="19.35" y2="9.87637" stroke="#797E84" stroke-width="1.3" stroke-linecap="round")
+                    +e.PATH(d="M14.7363 2.10522V2.10522C11.5492 6.88589 11.5492 13.114 14.7363 17.8947V17.8947" stroke="#797E84" stroke-width="1.3" stroke-linecap="round")
+                    +e.PATH(d="M5.26367 2.10522V2.10522C8.45078 6.88589 8.45078 13.114 5.26367 17.8947V17.8947" stroke="#797E84" stroke-width="1.3" stroke-linecap="round")
+            +e.link RU
+            +e.icon
+                +e.SVG(xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5" fill="none")
+                    +e.PATH(d="M7 1L4 4L1 0.999999" stroke="#797E84" stroke-width="1.3" stroke-linecap="round")
+        +e.dropdown-inner
+            +e.green-button(src=require('./../images/gray-button.svg'), alt='')
+            +e.dropdown-link
+                +e.A.dropdown-link-inner(href='#')
+                    +e.SPAN.dropdown-link-text EN

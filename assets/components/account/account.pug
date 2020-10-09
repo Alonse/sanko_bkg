@@ -1,0 +1,172 @@
+mixin account()
+    +b.account
+        +e.inner
+            .container
+                +breadcrumbs()
+                +e.FORM.wrapper()
+                    +e.IMG.logo-check(src=require('./../images/logo-check.svg'), alt='')
+                    +e.SPAN.title личный кабинет
+                    +e.list
+                        +e.item
+                            +e.item-wrapper
+                                +e.LABEL.item-label Имя
+                                +e.SPAN.item-change изменить
+                            +e.INPUT.item-input(name="name" type="text" placeholder="Иван")
+                        +e.item.disable
+                            +e.item-wrapper
+                                +e.LABEL.item-label Фамилия
+                                +e.SPAN.item-change изменить
+                            +e.INPUT.item-input(name="surname" type="text" placeholder="Иванов" value="Иванов")
+                        +e.item
+                            +e.item-wrapper
+                                +e.LABEL.item-label Организация
+                                +e.SPAN.item-change изменить
+                            +e.INPUT.item-input(name="organization" type="text" placeholder="ООО")
+                        +e.item
+                            +e.item-wrapper
+                                +e.LABEL.item-label Электронная почта
+                                +e.SPAN.item-change изменить
+                            +e.INPUT.item-input(name="email" type="text" placeholder="ivan.ivanov@mail.by")
+                        +e.item
+                            +e.item-wrapper
+                                +e.LABEL.item-label Должность
+                                +e.SPAN.item-change изменить
+                            +e.INPUT.item-input(name="stage" type="text" placeholder="Директор")
+                        +e.item
+                            +e.item-wrapper
+                                +e.LABEL.item-label Контактный телефон
+                                +e.SPAN.item-change изменить
+                            +e.INPUT.item-input(id="input-phone" name="phone" type="text" placeholder="+375  __  ___  __  __")
+                    +e.BUTTON.button(type="submit") Сохранить
+                +e.history
+                    +e.history-wrapper
+                        +e.SPAN.history-title история заказов
+                        +e.IMG(src=require('./../images/active.svg'), alt='')
+                    +e.history-list
+                        +e.history-item
+                            +e.SPAN.history-item-title Командообразование и решение проблем
+                            +e.history-item-content
+                                +e.history-item-content-text
+                                    +e.SPAN.history-item-content-text-title Место проведения
+                                    +e.history-item-content-text-wrapper
+                                        +e.history-item-image-wrapper
+                                            +e.IMG.history-item-image(src=require('./../images/location.svg'), alt='')
+                                        +e.SPAN.history-item-desc Минск, пр-т Победителей 100500, Marriott Hotel
+                                +e.history-item-content-text
+                                    +e.SPAN.history-item-content-text-title Дата
+                                    +e.history-item-content-text-wrapper
+                                        +e.history-item-image-wrapper
+                                            +e.IMG.history-item-image(src=require('./../images/date.svg'), alt='')
+                                        +e.SPAN.history-item-desc 3 сентября 2020
+                                +e.history-item-content-text
+                                    +e.SPAN.history-item-content-text-title Время
+                                    +e.history-item-content-text-wrapper
+                                        +e.history-item-image-wrapper
+                                            +e.IMG.history-item-image(src=require('./../images/time.svg'), alt='')
+                                        +e.SPAN.history-item-desc 12:00 – 17:00
+                                +e.history-item-content-text
+                                    +e.SPAN.history-item-content-text-title Количество билетов
+                                    +e.history-item-content-text-wrapper
+                                        +e.history-item-image-wrapper
+                                            +e.IMG.history-item-image(src=require('./../images/ticket.svg'), alt='')
+                                        +e.SPAN.history-item-desc 6
+                                +e.history-item-content-text
+                                    +e.SPAN.history-item-content-text-title Сумма заказа
+                                    +e.history-item-content-text-wrapper
+                                        +e.SPAN.history-item-desc 2500 BYN
+                        +e.history-item
+                            +e.SPAN.history-item-title Командообразование и решение проблем
+                            +e.history-item-content
+                                +e.history-item-content-text
+                                    +e.SPAN.history-item-content-text-title Место проведения
+                                    +e.history-item-content-text-wrapper
+                                        +e.history-item-image-wrapper
+                                            +e.IMG.history-item-image(src=require('./../images/location.svg'), alt='')
+                                        +e.SPAN.history-item-desc Минск, пр-т Победителей 100500, Marriott Hotel
+                                +e.history-item-content-text
+                                    +e.SPAN.history-item-content-text-title Дата
+                                    +e.history-item-content-text-wrapper
+                                        +e.history-item-image-wrapper
+                                            +e.IMG.history-item-image(src=require('./../images/date.svg'), alt='')
+                                        +e.SPAN.history-item-desc 3 сентября 2020
+                                +e.history-item-content-text
+                                    +e.SPAN.history-item-content-text-title Время
+                                    +e.history-item-content-text-wrapper
+                                        +e.history-item-image-wrapper
+                                            +e.IMG.history-item-image(src=require('./../images/time.svg'), alt='')
+                                        +e.SPAN.history-item-desc 12:00 – 17:00
+                                +e.history-item-content-text
+                                    +e.SPAN.history-item-content-text-title Количество билетов
+                                    +e.history-item-content-text-wrapper
+                                        +e.history-item-image-wrapper
+                                            +e.IMG.history-item-image(src=require('./../images/ticket.svg'), alt='')
+                                        +e.SPAN.history-item-desc 6
+                                +e.history-item-content-text
+                                    +e.SPAN.history-item-content-text-title Сумма заказа
+                                    +e.history-item-content-text-wrapper
+                                        +e.SPAN.history-item-desc 2500 BYN
+                        +e.history-item
+                            +e.SPAN.history-item-title Командообразование и решение проблем
+                            +e.history-item-content
+                                +e.history-item-content-text
+                                    +e.SPAN.history-item-content-text-title Место проведения
+                                    +e.history-item-content-text-wrapper
+                                        +e.history-item-image-wrapper
+                                            +e.IMG.history-item-image(src=require('./../images/location.svg'), alt='')
+                                        +e.SPAN.history-item-desc Минск, пр-т Победителей 100500, Marriott Hotel
+                                +e.history-item-content-text
+                                    +e.SPAN.history-item-content-text-title Дата
+                                    +e.history-item-content-text-wrapper
+                                        +e.history-item-image-wrapper
+                                            +e.IMG.history-item-image(src=require('./../images/date.svg'), alt='')
+                                        +e.SPAN.history-item-desc 3 сентября 2020
+                                +e.history-item-content-text
+                                    +e.SPAN.history-item-content-text-title Время
+                                    +e.history-item-content-text-wrapper
+                                        +e.history-item-image-wrapper
+                                            +e.IMG.history-item-image(src=require('./../images/time.svg'), alt='')
+                                        +e.SPAN.history-item-desc 12:00 – 17:00
+                                +e.history-item-content-text
+                                    +e.SPAN.history-item-content-text-title Количество билетов
+                                    +e.history-item-content-text-wrapper
+                                        +e.history-item-image-wrapper
+                                            +e.IMG.history-item-image(src=require('./../images/ticket.svg'), alt='')
+                                        +e.SPAN.history-item-desc 6
+                                +e.history-item-content-text
+                                    +e.SPAN.history-item-content-text-title Сумма заказа
+                                    +e.history-item-content-text-wrapper
+                                        +e.SPAN.history-item-desc 2500 BYN
+                        +e.history-item
+                            +e.SPAN.history-item-title Командообразование и решение проблем
+                            +e.history-item-content
+                                +e.history-item-content-text
+                                    +e.SPAN.history-item-content-text-title Место проведения
+                                    +e.history-item-content-text-wrapper
+                                        +e.history-item-image-wrapper
+                                            +e.IMG.history-item-image(src=require('./../images/location.svg'), alt='')
+                                        +e.SPAN.history-item-desc Минск, пр-т Победителей 100500, Marriott Hotel
+                                +e.history-item-content-text
+                                    +e.SPAN.history-item-content-text-title Дата
+                                    +e.history-item-content-text-wrapper
+                                        +e.history-item-image-wrapper
+                                            +e.IMG.history-item-image(src=require('./../images/date.svg'), alt='')
+                                        +e.SPAN.history-item-desc 3 сентября 2020
+                                +e.history-item-content-text
+                                    +e.SPAN.history-item-content-text-title Время
+                                    +e.history-item-content-text-wrapper
+                                        +e.history-item-image-wrapper
+                                            +e.IMG.history-item-image(src=require('./../images/time.svg'), alt='')
+                                        +e.SPAN.history-item-desc 12:00 – 17:00
+                                +e.history-item-content-text
+                                    +e.SPAN.history-item-content-text-title Количество билетов
+                                    +e.history-item-content-text-wrapper
+                                        +e.history-item-image-wrapper
+                                            +e.IMG.history-item-image(src=require('./../images/ticket.svg'), alt='')
+                                        +e.SPAN.history-item-desc 6
+                                +e.history-item-content-text
+                                    +e.SPAN.history-item-content-text-title Сумма заказа
+                                    +e.history-item-content-text-wrapper
+                                        +e.SPAN.history-item-desc 2500 BYN
+
+
+

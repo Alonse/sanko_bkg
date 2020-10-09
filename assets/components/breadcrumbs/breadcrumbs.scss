@@ -1,0 +1,41 @@
+@import "./../../common/constants";
+
+.breadcrumbs {
+
+  display: none;
+  margin: 1.5rem 0;
+
+  @include sm {
+    display: flex;
+  }
+
+  &__inner {
+    A {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 16px;
+      color: #797E84;
+      margin-right: .5rem;
+    }
+
+    A:hover {
+      text-decoration: underline;
+      color: #B9B9B9;
+    }
+
+    A:after {
+      content: '';
+      width: 4px;
+      height: 6px;
+      display: inline-block;
+      background: url("./../../images/breadcrumbs-arrow.png") no-repeat center;
+      margin-left: .5rem;
+    }
+
+    A:last-child:after {
+      display: none;
+    }
+  }
+
+}

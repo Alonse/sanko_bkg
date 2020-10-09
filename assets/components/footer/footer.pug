@@ -1,0 +1,94 @@
+mixin footer()
+    +b.footer
+        .container
+            +e.inner
+                +e.top
+                    +e.logo-inner
+                        +e.logo
+                            +e.logo-pic(src=require('./../images/sanko-logo.svg'), alt='')
+                        +e.socials_mobil
+                            +socials()
+                        +e.line
+                    +e.menu
+                        +e.filter-inner
+                            +e.filter
+                                +e.filter-header
+                                    +e.filter-title Направления деятельности
+                                    +e.filter-icon
+                                        +e.SVG(xmlns="http://www.w3.org/2000/svg" width="6" height="9" viewBox="0 0 6 9" fill="none")
+                                            +e.PATH.path(d="M1.5 1.5L4.5 4.5L1.5 7.5" stroke-width="1.3" stroke-linecap="round")
+                                +e.filter-body
+                                    +e.UL.filter-list
+                                        +e.LI.filter-item
+                                            +e.A(href='#') Осознанность & EQ
+                                        +e.LI.filter-item
+                                            +e.A(href='#') Стратегия и изменения
+                                        +e.LI.filter-item
+                                            +e.A(href='#') Развитие лидеров
+                                        +e.LI.filter-item
+                                            +e.A(href='#') Индивидуальный коучинг
+                                        +e.LI.filter-item
+                                            +e.A(href='#') Программы online формата
+                            +e.filter
+                                +e.filter-header
+                                    +e.filter-title Обо мне
+                                    +e.filter-icon
+                                        +e.SVG(xmlns="http://www.w3.org/2000/svg" width="6" height="9" viewBox="0 0 6 9" fill="none")
+                                            +e.PATH.path(d="M1.5 1.5L4.5 4.5L1.5 7.5" stroke-width="1.3" stroke-linecap="round")
+                                +e.filter-body
+                                    +e.UL.filter-list
+                                        +e.LI.filter-item
+                                            +e.A(href='#') Обо мне
+                                        +e.LI.filter-item
+                                            +e.A(href='#') Спросить Дениса
+                                        +e.LI.filter-item
+                                            +e.A(href='#') Отзывы
+                            +e.filter
+                                +e.filter-header
+                                    +e.filter-title Центр знаний
+                                    +e.filter-icon
+                                        +e.SVG(xmlns="http://www.w3.org/2000/svg" width="6" height="9" viewBox="0 0 6 9" fill="none")
+                                            +e.PATH.path(d="M1.5 1.5L4.5 4.5L1.5 7.5" stroke-width="1.3" stroke-linecap="round")
+                                +e.filter-body
+                                    +e.UL.filter-list
+                                        +e.LI.filter-item
+                                            +e.A(href='#') Аудио
+                                        +e.LI.filter-item
+                                            +e.A(href='#') Видео
+                                        +e.LI.filter-item
+                                            +e.A(href='#') Статьи
+                            +e.filter
+                                +e.filter-header
+                                    +e.A.filter-title(href='#') Контакты
+                                +e.filter-body
+                                +e.socials_md
+                                    +socials
+                +e.map
+                    +e.map-links
+                        +e.A(href='#') Карта сайта
+                        +e.A(href='#') Правила пользования сайтом и политика конфиденциальности
+                        +e.A(href='#') Правила онлайн-оплаты
+                        +e.A(href='#') Договор публичной оферты
+                    +e.developed
+                        +e.A.developed-link(href='')
+                            +e.SPAN.developed-by Developed by
+                            +e.mastak-logo(src=require('./../images/mastak-logo.svg'), alt='')
+                        +e.A.developed-link(href='')
+                            +e.SPAN.developed-by Designed by
+                            +e.SPAN.az AZ88
+                +e.bottom
+                    +e.rules-inner
+                        +e.rights
+                            +e.SPAN © 2020 All Rights Reserved. ИП Санько Денис Анатольевич  |  УНП 192500395  |  220004, Республика Беларусь, Минск, ул. Заславская, д.12-71. Свидетельство о государственной регистрации № 0557168 от 1.07.2015 выдано Администрацией Центрального Района г. Минска
+                    +e.payment-icons
+                        +e.payment-icons-inner
+                            +e.payment-icon(src=require('./../images/payment-1.svg'), alt='')
+                            +e.payment-icon(src=require('./../images/payment-2.svg'), alt='')
+                            +e.payment-icon(src=require('./../images/payment-3.svg'), alt='')
+                            +e.payment-icon(src=require('./../images/payment-4.svg'), alt='')
+                        +e.payment-icons-inner
+                            +e.payment-icon(src=require('./../images/payment-5.svg'), alt='')
+                            +e.payment-icon(src=require('./../images/payment-6.svg'), alt='')
+                            +e.payment-icon(src=require('./../images/payment-7.svg'), alt='')
+                            +e.payment-icon(src=require('./../images/payment-8.svg'), alt='')
+                            +e.payment-icon(src=require('./../images/payment-9.svg'), alt='')

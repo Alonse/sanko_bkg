@@ -1,0 +1,22 @@
+mixin tabs-complex()
+    +b.tabs-complex
+        +e.inner
+            +directions()
+            +e.wrapper(id='complex-tabs')
+                +e.control-inner
+                    .container
+                        +e.UL.control
+                            +e.roller
+                            +e.LI
+                                +e.A.button(href='#complex-tabs-1' id='for-company') Для вашей компании
+                            +e.LI
+                                +e.A.button(href='#complex-tabs-2' id='for-you') Для ваc
+                +e.content
+                    +e.tab-1(id='complex-tabs-1')
+                        +popup-link()
+                        +tabs-inner()
+                        +control()
+                    +e.tab-2(id='complex-tabs-2')
+                        +popup-link()
+                        +tabs-inner()
+                        +control()

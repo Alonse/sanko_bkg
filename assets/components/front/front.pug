@@ -1,0 +1,29 @@
+mixin front()
+    +b.front
+        +e.bgd
+        +e.inner
+            +e.content
+                +e.text
+                    +e.text-item(src=require('./../images/change-self.svg'), alt='')
+                    +e.text-item(src=require('./../images/change-organizations.svg'), alt='')
+                +e.portrait
+                    +e.portrait-pic(src=require('./../images/denis-portrait.png'), alt='')
+            +e.swiper-container.swiper-container
+                +e.swiper-wrapper.swiper-wrapper
+                    +e.swiper-slide.swiper-slide
+                        +e.partner-logo(src=require('./../images/krauta-logo.svg'), alt='')
+                    +e.swiper-slide.swiper-slide
+                        +e.partner-logo(src=require('./../images/heineken-logo.svg'), alt='')
+                    +e.swiper-slide.swiper-slide
+                        +e.partner-logo(src=require('./../images/hilti-logo.svg'), alt='')
+                    +e.swiper-slide.swiper-slide
+                        +e.partner-logo(src=require('./../images/tatneft-logo.svg'), alt='')
+                    +e.swiper-slide.swiper-slide
+                        +e.partner-logo(src=require('./../images/mts-logo.svg'), alt='')
+                    +e.swiper-slide.swiper-slide
+                        +e.partner-logo(src=require('./../images/severstal-logo.svg'), alt='')
+            +e.shadow(src=require('./../images/front-shadow.png'), alt='')
+            +e.front-line-inner
+                +e.front-line-bgd
+                +e.front-line(src=require('./../images/front-line.png'), alt='')
+                +e.front-line-bgd

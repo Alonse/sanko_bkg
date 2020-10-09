@@ -1,0 +1,20 @@
+mixin forget()
+    +b.forget
+        +e.inner
+            .container
+                +breadcrumbs()
+                +e.FORM.wrapper(id="contact-form")
+                    +e.IMG.logo-check(src=require('./../images/logo-check.svg'), alt='')
+                    +e.SPAN.title Восстановление пароля
+                    +e.wrapper-content
+                        +e.links
+                            +e.A.link(href="#") вход
+                            +e.A.link(href="#") регистрация
+                        +e.list
+                            +e.item
+                                +e.item-wrapper
+                                    +e.LABEL.item-label Электронная почта*
+                                +e.INPUT.item-input(name="email" type="text" placeholder="...@...")
+                            +e.BUTTON.button(type="submit") Восстановить
+
+

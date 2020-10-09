@@ -1,0 +1,28 @@
+@import "./../../common/constants";
+
+.socials {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    align-items: center;
+  }
+
+  &__path {
+    fill: #797E84;
+  }
+
+  &__item:hover &__path{
+    fill: #9DE836;
+  }
+
+  &__item{
+
+    a{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+  }
+}

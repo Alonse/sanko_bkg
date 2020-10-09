@@ -1,0 +1,9 @@
+mixin contacts-page()
+    +b.contacts-page
+        +e.inner
+            .container
+                +e.portrait(src=require('./../images/contacts-portrait.png'), alt='')
+                +breadcrumbs()
+                +e.wrapper
+                    +contacts()
+                    +form()

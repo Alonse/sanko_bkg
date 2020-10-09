@@ -1,0 +1,257 @@
+@import "./../../common/constants";
+
+.signin {
+
+  background: #F1F3F6;
+  padding-top: 80px;
+  padding-bottom: 50px;
+
+  @include sm{
+    padding-top: 62px;
+  }
+
+  &__wrapper{
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 30px 20px;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    @include lg{
+      padding: 30px 20px 100px 20px;
+    }
+
+    &:before{
+
+      content: '';
+      display: block;
+      width: 12px;
+      height: 44px;
+      position: absolute;
+      left: 0;
+      top: 30px;
+      background-image: url(./../../images/green-checkout.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+
+    }
+
+  }
+
+  &__title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #252F3D;
+
+    @include lg{
+      line-height: 44px;
+    }
+
+  }
+
+  &__list{
+    margin-top: 30px;
+
+    @include md{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    @include lg{
+      width: 452px;
+      max-width: 452px;
+      min-width: 452px;
+      flex-direction: column;
+    }
+
+  }
+
+  &__item{
+    margin-bottom: 28px;
+    box-sizing: border-box;
+
+  }
+
+  &__item-wrapper{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  &__item-label{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #939EA7;
+    display: block;
+
+  }
+
+  &__item-change{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #B9B9B9;
+    border-bottom: 1px solid #B9B9B9;
+    margin-left: 10px;
+    display: none;
+  }
+
+  &__item-input{
+    background: #FFFFFF;
+    border: 1px solid #D6D8D9;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+
+    box-sizing: border-box;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+
+
+    &::placeholder{
+      color: #B9B9B9;
+    }
+
+  }
+
+
+  &__button{
+    width: 181px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    cursor: pointer;
+    background: #8BCC32;
+    border-radius: 4px;
+    border: none;
+
+
+  }
+
+  &__logo-check{
+    display: none;
+
+    @include lg{
+      display: block;
+      width: 145.77px;
+      height: 129px;
+      opacity: 0.36;
+      right: 28px;
+      top: 37px;
+      position: absolute;
+    }
+
+  }
+
+  label.error{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgb(234, 71, 25);
+    padding-top: 5px;
+    text-transform: lowercase;
+
+  }
+
+  input.error{
+    border: 1px solid rgb(234, 71, 25);
+  }
+
+  textarea.error{
+    border: 1px solid rgb(234, 71, 25);
+  }
+
+  &__links{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+
+    @include lg{
+      width: 282px;
+    }
+
+  }
+
+  &__link{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #939EA7;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    margin-bottom: 20px;
+  }
+
+  &__title-item{
+    display: block;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #939EA7;
+    margin-bottom: 10px;
+  }
+
+  &__social{
+    margin-top: 30px;
+
+    @include lg{
+      margin-left: 60px;
+    }
+
+  }
+
+  &__social-wrapper{
+    display: flex;
+  }
+
+  &__soc-item{
+    margin-right: 15px;
+  }
+
+  &__soc-item-image{
+    width: 35.11px;
+    height: 35.11px;
+    min-width: 35.11px;
+    min-height: 35.11px;
+  }
+
+  &__wrapper-content{
+
+    @include lg{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+  }
+
+
+
+}

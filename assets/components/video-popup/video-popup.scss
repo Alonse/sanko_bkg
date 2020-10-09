@@ -1,0 +1,77 @@
+@import "./../../common/constants";
+@import "./../../../node_modules/remodal/dist/remodal.css";
+@import "./../../../node_modules/remodal/dist/remodal-default-theme.css";
+
+.remodal{
+  background: rgba(37, 47, 61, 1);
+  max-width: 100%;
+  padding: 0;
+  @include md {
+    background: rgba(37, 47, 61, 0.8);
+  }
+
+  @include hd {
+    max-width: 1920px;
+  }
+
+  iframe{
+    height: 315px;
+  }
+
+  @include sm{
+    iframe{
+      height: 393px;
+    }
+  }
+
+  @include md{
+    iframe{
+      height: 522px;
+    }
+  }
+
+  @include lg{
+    iframe{
+      height: 537px;
+    }
+  }
+
+  @include hd{
+    iframe{
+      height: 750px;
+    }
+  }
+
+  @include xhd{
+    iframe{
+      height: 900px;
+    }
+  }
+
+
+
+
+}
+
+.remodal-overlay {
+  background: rgba(37, 47, 61, 1);
+
+  @include md {
+    background: rgba(37, 47, 61, 0.8);
+  }
+}
+.remodal-wrapper {
+  background: rgba(37, 47, 61, 1);
+  @include md {
+    background: rgba(37, 47, 61, 0.8);
+  }
+}
+
+.remodal-close{
+  left: unset;
+  right: 0;
+  display: flex;
+}
+.remodal-close:before {
+  display: none;
+}

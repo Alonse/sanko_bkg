@@ -1,0 +1,13 @@
+include ./../mixins
+doctype html
+html
+    +head()
+    body(class="app")
+        //+loader('loader__spinner_falcon')
+        +header()
+        main.main
+            div.flex-container
+                +pattern()
+                +hub()
+                +footer()
+                +compass-button()

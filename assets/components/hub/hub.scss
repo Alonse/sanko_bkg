@@ -1,0 +1,238 @@
+@import "./../../common/constants";
+
+.hub {
+  overflow: hidden;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+
+  @include sm {
+    padding-top: 215px;
+  }
+  @include md {
+    padding-top: 140px;
+  }
+
+  &__wrapper {
+    background: linear-gradient(180deg, transparent 0%, transparent 50%, #252F3D 50%, #252F3D 100%);
+    position: relative;
+    margin-top: 80px;
+
+    @include sm {
+      display: flex;
+      justify-content: center;
+      margin-top: 0px;
+      height: 240px;
+    }
+
+    @include md {
+      margin-top: 75px;
+    }
+  }
+
+  &__bgd-button {
+    position: absolute;
+    min-width: 2560px;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(50% - 55px);
+  }
+
+  &__content {
+    position: relative;
+    bottom: 75px;
+
+    @include sm {
+      position: absolute;
+      bottom: 30px;
+    }
+  }
+
+
+
+  &__laptop {
+    z-index: 1;
+    width: 320px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+
+    @include sm {
+      width: 738px;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #252F3D;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+    min-width: 200px;
+
+    @include sm {
+      font-size: 32px;
+      line-height: 44px;
+      top: 35%;
+      font-weight: 600;
+    }
+
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #252F3D;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 38%;
+    min-width: 200px;
+
+    @include sm {
+      top: 48%;
+    }
+  }
+
+  &__subtitle {
+    font-size: 12px;
+    line-height: 19px;
+    text-align: center;
+    color: #252F3D;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 65%;
+    min-width: 200px;
+
+    @include sm {
+      top: 57%;
+      font-size: 14px;
+    }
+  }
+
+  &__link {
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 115%;
+    background: #8BCC32;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding: 10px 20px;
+
+    @include sm {
+      top: 68%;
+    }
+
+  }
+
+  &__d-logo {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__d-logo-pic {
+    display: none;
+  }
+
+  &__d-logo &__d-logo-pic:nth-child(3) {
+
+    @include sm {
+    position: absolute;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 12%;
+    width: 80px;
+    height: auto;
+    }
+
+  }
+
+  &__d-logo &__d-logo-pic:nth-child(1) {
+
+    @include md {
+      position: absolute;
+      display: block;
+      left: -15%;
+      top: 15%;
+      width: 132px;
+      height: auto;
+    }
+
+    @include lg {
+      left: -25%;
+      top: 5%;
+    }
+
+  }
+
+  &__d-logo &__d-logo-pic:nth-child(2) {
+
+    @include md {
+      position: absolute;
+      display: block;
+      left: 1%;
+      top: 72%;
+      width: 58px;
+      height: auto;
+    }
+
+    @include md {
+      left: -4%;
+      top: 47%;
+    }
+
+  }
+
+
+  &__d-logo &__d-logo-pic:nth-child(4) {
+
+    @include md {
+      position: absolute;
+      display: block;
+      right: -15%;
+      top: 15%;
+      width: 132px;
+      height: auto;
+    }
+
+    @include lg {
+      right: -25%;
+      top: 5%;
+    }
+
+  }
+
+  &__d-logo &__d-logo-pic:nth-child(5) {
+
+    @include md {
+      position: absolute;
+      display: block;
+      right: 1%;
+      top: 72%;
+      width: 58px;
+      height: auto;
+    }
+
+    @include md {
+      right: -4%;
+      top: 47%;
+    }
+
+  }
+
+
+
+}

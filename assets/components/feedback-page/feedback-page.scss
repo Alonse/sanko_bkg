@@ -1,0 +1,158 @@
+@import "./../../common/constants";
+
+.feedback-page {
+
+  font-family: "Open Sans", sans-serif;
+
+  &__inner {
+    padding-top: 56px;
+
+    @include sm {
+      padding-top: 85px;
+    }
+  }
+
+  &__wrapper {
+
+    @include md {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #252F3D;
+    margin-bottom: 55px;
+    margin-top: 16px;
+
+    @include sm {
+      margin-bottom: 60px;
+      margin-top: 24px;
+    }
+  }
+
+  &__item {
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin-bottom: 32px;
+    position: relative;
+    padding: 16px;
+
+    @include sm {
+      padding: 32px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__item-pic {
+    width: 58px;
+    height: auto;
+    position: absolute;
+    left: 16px;
+    top: -16px;
+    border-radius: 8px;
+
+    @include sm {
+      width: 114px;
+      left: 25px;
+      top: -20px;
+    }
+
+  }
+
+  &__name-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 0px 4px 74px;
+
+    @include sm {
+      padding: 82px 0px 0px 0px;
+    }
+  }
+  &__name {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #252F3D;
+    transition: .5s;
+  }
+
+  &__duty {
+    font-size: 12px;
+    line-height: 16px;
+    color: #797E84;
+    margin-bottom: 20px;
+    margin-top: 24px;
+
+    @include sm {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__decription {
+    font-size: 14px;
+    line-height: 19px;
+    color: #252F3D;
+  }
+
+  &__logo {
+    position: absolute;
+    right: 32px;
+    top: 20px;
+    display: none;
+    height: 60px;
+    width: auto;
+
+    @include sm {
+      display: block;
+    }
+
+
+  }
+
+  &__content {
+    display: none;
+
+    @include sm {
+      display: block;
+    }
+  }
+
+  &__icon {
+    transition: .5s;
+
+    @include sm {
+      display: none;
+    }
+  }
+
+
+  &__icon_active {
+    transform: rotate(90deg);
+    transition: .5s;
+  }
+
+  &__icon-path_active {
+    stroke: #8BCC32;
+  }
+
+  &__name_active {
+    transition: .5s;
+    color: #8BCC32;
+  }
+
+  &__item_half {
+
+    @include md {
+      width: 49%;
+    }
+  }
+
+}

@@ -1,0 +1,23 @@
+@import "./../../common/constants";
+
+.efforts {
+
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  &__inner {
+    background: #F1F3F6;
+
+  }
+
+  &__top-line {
+    position: relative;
+    min-width: 2560px;
+    left: 50%;
+    transform: translate(-50%);
+    height: auto;
+  }
+
+}

@@ -1,0 +1,102 @@
+@import "./../../common/constants";
+
+.tabs {
+  font-family: "Open Sans", sans-serif;
+  margin-top: -19px;
+
+  @include sm {
+    margin-top: -69px;
+  }
+
+  &__inner {
+    background: linear-gradient(180deg, #F5F6F8 63.36%, #E9EDF2 100%);
+  }
+
+
+  &__content {
+    padding: 20px 0;
+    display: none;
+
+  }
+
+  &__content_active {
+    display: block;
+
+  }
+
+  &__content-inner {
+    border-radius: 0 0 8px 8px;
+    display: flex;
+    flex-direction: column-reverse;
+
+    @include sm {
+      flex-direction: row;
+    }
+  }
+  &__content-title {
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #252F3D;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+
+    @include sm {
+      padding: 25px 0 32px 0px;
+      font-size: 24px;
+      line-height: 33px;
+      margin-bottom: 0px;
+      margin-top: 0px;
+    }
+  }
+
+  &__right-bar{
+    width: 100%;
+  }
+
+  &__left-bar {
+    transition: .5s;
+
+    @include sm {
+      height: fit-content;
+      position: sticky;
+      top: 97px;
+      min-width: 300px;
+    }
+  }
+
+  &__left-bar_active {
+    top: 125px;
+    transition: .5s;
+  }
+
+
+  &__content-bgd {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    align-items: flex-start;
+
+    @include md {
+      float: right;
+      width: 300px;
+      margin: 32px;
+    }
+
+    @include lg {
+      width: 368px;
+    }
+
+  }
+
+  &__content-bgd-pic {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    z-index: 1;
+  }
+
+
+}

@@ -1,0 +1,21 @@
+include ./../mixins
+doctype html
+html
+    +head()
+    body(class="app")
+        //+loader('loader__spinner_falcon')
+        div.index-page
+            +header()
+            +compass(data-remodal-id='compass-modal')
+            main.main(id='main')
+                +front()
+                div.gradient-inner
+                    +profiles()
+                    +concept()
+                    +video()
+                    +feedback()
+                    +events()
+                    +hub()
+                +footer()
+                +video-popup('https://www.youtube.com/embed/nYqZz88eOzQ')(data-remodal-id='modal')
+                +compass-button()

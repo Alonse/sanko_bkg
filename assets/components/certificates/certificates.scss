@@ -1,0 +1,212 @@
+@import "./../../common/constants";
+
+.certificates {
+
+  &__inner {
+    position: relative;
+    margin-top: 30px;
+
+    @include sm {
+      margin-top: 30px;
+    }
+
+    @include md {
+      margin-top: 60px;
+    }
+
+    @include lg {
+      max-width: 1280px;
+      margin: 60px auto 0;
+    }
+
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #252F3D;
+    margin-bottom: 16px;
+
+    @include sm {
+      margin-bottom: 20px;
+      text-align: left;
+      padding: 0 22px;
+    }
+
+  }
+
+  &__swiper-slide {
+    padding-bottom: 20px;
+    width: 260px;
+
+    @include sm {
+      width: 352px;
+    }
+
+    @include md {
+      width: 314px;
+    }
+    @include lg {
+      width: 295px;
+    }
+
+
+  }
+
+  &__swiper-wrapper {
+
+    @include sm {
+
+      padding-left: 22px;
+      padding-right: 22px;
+      padding-bottom: 76px;
+    }
+
+    @include lg {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  &__swiper-container {
+    margin-bottom: 16px;
+
+    @include lg {
+      max-width: 1280px;
+    }
+  }
+
+  &__slide-inner {
+    position: relative;
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 22px;
+    margin: 0 auto;
+
+  }
+
+  &__name {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #252F3D;
+    margin-bottom: 32px;
+    min-height: 75px;
+    max-height: 75px;
+  }
+
+  &__place {
+    display: flex;
+    align-items: center;
+  }
+
+  &__place-text {
+    font-size: 14px;
+    line-height: 19px;
+    color: #797E84;
+  }
+
+  &__place-icon {
+    width: 20px;
+    height: auto;
+    margin-right: 8px;
+  }
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #8BCC32;
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon-pic {
+    width: 28px;
+    height: auto;
+  }
+
+  &__icon_blue {
+    background: #0090E1;
+  }
+
+  &__icon_red {
+    background: #EA4719;
+  }
+
+  &__icon_orange {
+    background: #F19D38;
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: #797E84;
+    display: block;
+    text-align: center;
+
+    @include sm {
+      position: absolute;
+      top: 10px;
+      right: 22px;
+    }
+  }
+  &__button {
+    background-color: transparent;
+    width: 63px;
+    height: 63px;
+    min-width: 63px;
+    padding: 0;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  &__swiper-button-next {
+    background-image: url("./../../images/next-button.png");
+    transition: .5s;
+    display: none;
+
+    @include sm  {
+      display: block;
+      bottom: 0;
+      left: 82px;
+      margin-top: 0;
+      top: unset;
+    }
+  }
+
+  &__swiper-button-prev {
+    background-image: url("./../../images/prev-button.png");
+    transition: .5s;
+    display: none;
+
+    @include sm  {
+      display: block;
+      bottom: 0;
+      left: 13px;
+      margin-top: 0;
+      top: unset;
+    }
+  }
+
+
+  &__swiper-button-prev:hover {
+    background-image: url("./../../images/prev-button-hover.png");
+    transition: .5s;
+  }
+
+  &__swiper-button-next:hover {
+    background-image: url("./../../images/next-button-hover.png");
+    transition: .5s;
+  }
+
+}
